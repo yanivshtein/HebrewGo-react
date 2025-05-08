@@ -1,0 +1,521 @@
+{
+  "us": {
+    "easy": [
+      {
+        "question": "?'דלת' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Window",
+          "Chair",
+          "Door",
+          "Book"
+        ],
+        "correct": 2,
+        "hint": "It's a basic item in a house. You use it to enter or exit a room."
+      },
+      {
+        "question": "?'חתול' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Dog",
+          "Chair",
+          "Cat",
+          "House"
+        ],
+        "correct": 2,
+        "hint": "It's a common household pet, often likes to nap and purr."
+      },
+      {
+        "question": "?'כלב' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Cat",
+          "Dog",
+          "Fish",
+          "Bird"
+        ],
+        "correct": 1,
+        "hint": "It's a popular pet known as man's best friend."
+      },
+      {
+        "question": "?'בית' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Car",
+          "School",
+          "House",
+          "Store"
+        ],
+        "correct": 2,
+        "hint": "It's where most people live."
+      },
+      {
+        "question": "?'מים' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Fire",
+          "Water",
+          "Air",
+          "Earth"
+        ],
+        "correct": 1,
+        "hint": "You drink it when you're thirsty."
+      }
+    ],
+    "medium": [
+      {
+        "question": "?'אני גר ב_____' Complete the sentence:",
+        "answers": [
+          "תפוח (apple)",
+          "ספר (book)",
+          "בית (house)",
+          "חתול (cat)"
+        ],
+        "correct": 2,
+        "hint": "Think about where someone lives."
+      },
+      {
+        "question": "?'אני אוהב לאכול _____' Complete the sentence:",
+        "answers": [
+          "שולחן (table)",
+          "תפוח (apple)",
+          "כלב (dog)",
+          "מכונית (car)"
+        ],
+        "correct": 1,
+        "hint": "Think of something you can eat."
+      },
+      {
+        "question": "?'אני שותה _____' Complete the sentence:",
+        "answers": [
+          "לחם (bread)",
+          "מים (water)",
+          "מכונית (car)",
+          "כיסא (chair)"
+        ],
+        "correct": 1,
+        "hint": "Think about what people drink."
+      },
+      {
+        "question": "?'אני קורא _____' Complete the sentence:",
+        "answers": [
+          "ספר (book)",
+          "שולחן (table)",
+          "חלון (window)",
+          "מזלג (fork)"
+        ],
+        "correct": 0,
+        "hint": "Think about what you can read."
+      },
+      {
+        "question": "?'אני הולך ל_____' Complete the sentence:",
+        "answers": [
+          "חתול (cat)",
+          "בית (house)",
+          "בית ספר (school)",
+          "עץ (tree)"
+        ],
+        "correct": 2,
+        "hint": "Think about where children go to learn."
+      }
+    ],
+    "hard": [
+      {
+        "question": "?'שולחן' Translate this Hebrew word to English:",
+        "answers": [
+          "Chair",
+          "Table",
+          "Desk",
+          "Bed"
+        ],
+        "correct": 1,
+        "hint": "You usually eat on it."
+      },
+      {
+        "question": "?'אני הולך לבית הספר' Translate this Hebrew phrase to English:",
+        "answers": [
+          "I am going to school",
+          "I am going to the store",
+          "I am going to work",
+          "I am going home"
+        ],
+        "correct": 0,
+        "hint": "It's something a student would say."
+      },
+      {
+        "question": "?'אני אוהב לבשל' Translate this Hebrew phrase to English:",
+        "answers": [
+          "I like to read",
+          "I like to cook",
+          "I like to sleep",
+          "I like to swim"
+        ],
+        "correct": 1,
+        "hint": "This is an activity you do in the kitchen."
+      },
+      {
+        "question": "?'מחשב' Translate this Hebrew word to English:",
+        "answers": [
+          "Television",
+          "Radio",
+          "Computer",
+          "Phone"
+        ],
+        "correct": 2,
+        "hint": "A device you use for work, browsing the internet, and programming."
+      },
+      {
+        "question": "?'מה השעה?' Translate this Hebrew phrase to English:",
+        "answers": [
+          "How are you?",
+          "What's your name?",
+          "Where is the bathroom?",
+          "What time is it?"
+        ],
+        "correct": 3,
+        "hint": "You ask this when you need to know the current time."
+      }
+    ]
+  },
+  "es": {
+    "easy": [
+      {
+        "question": "?'דלת' ¿Cuál es la traducción correcta de la palabra hebrea",
+        "answers": [
+          "Ventana",
+          "Silla",
+          "Puerta",
+          "Libro"
+        ],
+        "correct": 2,
+        "hint": "Es un objeto básico en una casa. Se usa para entrar o salir de una habitación."
+      },
+      {
+        "question": "?'חתול' ¿Cuál es la traducción correcta de la palabra hebrea",
+        "answers": [
+          "Perro",
+          "Silla",
+          "Gato",
+          "Casa"
+        ],
+        "correct": 2,
+        "hint": "Es una mascota común. Le gusta dormir y ronronear."
+      },
+      {
+        "question": "?'כלב' ¿Cuál es la traducción correcta de la palabra hebrea",
+        "answers": [
+          "Gato",
+          "Perro",
+          "Pez",
+          "Pájaro"
+        ],
+        "correct": 1,
+        "hint": "Es una mascota popular conocida como el mejor amigo del hombre."
+      },
+      {
+        "question": "?'בית' ¿Cuál es la traducción correcta de la palabra hebrea",
+        "answers": [
+          "Coche",
+          "Escuela",
+          "Casa",
+          "Tienda"
+        ],
+        "correct": 2,
+        "hint": "Es donde vive la mayoría de la gente."
+      },
+      {
+        "question": "?'מים' ¿Cuál es la traducción correcta de la palabra hebrea",
+        "answers": [
+          "Fuego",
+          "Agua",
+          "Aire",
+          "Tierra"
+        ],
+        "correct": 1,
+        "hint": "Lo bebes cuando tienes sed."
+      }
+    ],
+    "medium": [
+      {
+        "question": "?'אני גר ב_____' Completa la frase: (Yo vivo en _____)",
+        "answers": [
+          "תפוח (manzana)",
+          "ספר (libro)",
+          "בית (casa)",
+          "חתול (gato)"
+        ],
+        "correct": 2,
+        "hint": "Piensa dónde vive una persona."
+      },
+      {
+        "question": "?'אני אוהב לאכול _____' Completa la frase: (Me gusta comer _____)",
+        "answers": [
+          "שולחן (mesa)",
+          "תפוח (manzana)",
+          "כלב (perro)",
+          "מכונית (coche)"
+        ],
+        "correct": 1,
+        "hint": "Piensa en algo que se pueda comer."
+      },
+      {
+        "question": "?'אני שותה _____' Completa la frase: (Yo bebo _____)",
+        "answers": [
+          "לחם (pan)",
+          "מים (agua)",
+          "מכונית (coche)",
+          "כיסא (silla)"
+        ],
+        "correct": 1,
+        "hint": "Piensa en lo que la gente bebe."
+      },
+      {
+        "question": "?'אני קורא _____' Completa la frase: (Yo leo _____)",
+        "answers": [
+          "ספר (libro)",
+          "שולחן (mesa)",
+          "חלון (ventana)",
+          "מזלג (tenedor)"
+        ],
+        "correct": 0,
+        "hint": "Piensa en lo que puedes leer."
+      },
+      {
+        "question": "?'אני הולך ל_____' Completa la frase: (Yo voy a _____)",
+        "answers": [
+          "חתול (gato)",
+          "בית (casa)",
+          "בית ספר (escuela)",
+          "עץ (árbol)"
+        ],
+        "correct": 2,
+        "hint": "Piensa en dónde van los niños a aprender."
+      }
+    ],
+    "hard": [
+      {
+        "question": "?'שולחן' Traduce esta palabra hebrea al español:",
+        "answers": [
+          "Silla",
+          "Mesa",
+          "Escritorio",
+          "Cama"
+        ],
+        "correct": 1,
+        "hint": "Normalmente se usa para comer."
+      },
+      {
+        "question": "?'אני הולך לבית הספר' Traduce esta frase hebrea al español:",
+        "answers": [
+          "Estoy yendo a la escuela",
+          "Estoy yendo a la tienda",
+          "Estoy yendo al trabajo",
+          "Estoy yendo a casa"
+        ],
+        "correct": 0,
+        "hint": "Es algo que diría un estudiante."
+      },
+      {
+        "question": "?'אני אוהב לבשל' Traduce esta frase hebrea al español:",
+        "answers": [
+          "Me gusta leer",
+          "Me gusta cocinar",
+          "Me gusta dormir",
+          "Me gusta nadar"
+        ],
+        "correct": 1,
+        "hint": "Es una actividad que haces en la cocina."
+      },
+      {
+        "question": "?'מחשב' Traduce esta palabra hebrea al español:",
+        "answers": [
+          "Televisión",
+          "Radio",
+          "Ordenador",
+          "Teléfono"
+        ],
+        "correct": 2,
+        "hint": "Un dispositivo que usas para trabajar, navegar por internet y programar."
+      },
+      {
+        "question": "?'מה השעה?' Traduce esta frase hebrea al español:",
+        "answers": [
+          "¿Cómo estás?",
+          "¿Cómo te llamas?",
+          "¿Dónde está el baño?",
+          "¿Qué hora es?"
+        ],
+        "correct": 3,
+        "hint": "Preguntas esto cuando necesitas saber la hora actual."
+      }
+    ]
+  },
+  "ru": {
+    "easy": [
+      {
+        "question": "?'דלת' Какой правильный перевод еврейского слова",
+        "answers": [
+          "Окно",
+          "Стул",
+          "Дверь",
+          "Книга"
+        ],
+        "correct": 2,
+        "hint": "Обычный предмет в доме. Используется, чтобы войти или выйти из комнаты."
+      },
+      {
+        "question": "?'חתול' Какой правильный перевод еврейского слова",
+        "answers": [
+          "Собака",
+          "Стул",
+          "Кошка",
+          "Дом"
+        ],
+        "correct": 2,
+        "hint": "Обычное домашнее животное. Любит спать и мурлыкать."
+      },
+      {
+        "question": "?'כלב' Какой правильный перевод еврейского слова",
+        "answers": [
+          "Кошка",
+          "Собака",
+          "Рыба",
+          "Птица"
+        ],
+        "correct": 1,
+        "hint": "Популярный домашний питомец, известный как лучший друг человека."
+      },
+      {
+        "question": "?'בית' Какой правильный перевод еврейского слова",
+        "answers": [
+          "Машина",
+          "Школа",
+          "Дом",
+          "Магазин"
+        ],
+        "correct": 2,
+        "hint": "Место, где живет большинство людей."
+      },
+      {
+        "question": "?'מים' Какой правильный перевод еврейского слова",
+        "answers": [
+          "Огонь",
+          "Вода",
+          "Воздух",
+          "Земля"
+        ],
+        "correct": 1,
+        "hint": "Ты пьёшь это, когда испытываешь жажду."
+      }
+    ],
+    "medium": [
+      {
+        "question": "?'אני גר ב_____' Дополните предложение: (Я живу в _____)",
+        "answers": [
+          "תפוח (яблоко)",
+          "ספר (книга)",
+          "בית (дом)",
+          "חתול (кот)"
+        ],
+        "correct": 2,
+        "hint": "Подумайте, где живёт человек."
+      },
+      {
+        "question": "?'אני אוהב לאכול _____' Дополните предложение: (Я люблю есть _____)",
+        "answers": [
+          "שולחן (стол)",
+          "תפוח (яблоко)",
+          "כלב (собака)",
+          "מכונית (машина)"
+        ],
+        "correct": 1,
+        "hint": "Подумайте о чём-то съедобном."
+      },
+      {
+        "question": "?'אני שותה _____' Дополните предложение: (Я пью _____)",
+        "answers": [
+          "לחם (хлеб)",
+          "מים (вода)",
+          "מכונית (машина)",
+          "כיסא (стул)"
+        ],
+        "correct": 1,
+        "hint": "Подумайте о том, что люди пьют."
+      },
+      {
+        "question": "?'אני קורא _____' Дополните предложение: (Я читаю _____)",
+        "answers": [
+          "ספר (книга)",
+          "שולחן (стол)",
+          "חלון (окно)",
+          "מזלג (вилка)"
+        ],
+        "correct": 0,
+        "hint": "Подумайте, что можно читать."
+      },
+      {
+        "question": "?'אני הולך ל_____' Дополните предложение: (Я иду в _____)",
+        "answers": [
+          "חתול (кот)",
+          "בית (дом)",
+          "בית ספר (школа)",
+          "עץ (дерево)"
+        ],
+        "correct": 2,
+        "hint": "Подумайте, куда дети ходят учиться."
+      }
+    ],
+    "hard": [
+      {
+        "question": "?'שולחן' Переведите это еврейское слово на русский:",
+        "answers": [
+          "Стул",
+          "Стол",
+          "Письменный стол",
+          "Кровать"
+        ],
+        "correct": 1,
+        "hint": "Обычно используется для еды."
+      },
+      {
+        "question": "?'אני הולך לבית הספר' Переведите эту фразу с иврита на русский:",
+        "answers": [
+          "Я иду в школу",
+          "Я иду в магазин",
+          "Я иду на работу",
+          "Я иду домой"
+        ],
+        "correct": 0,
+        "hint": "Так говорит ученик."
+      },
+      {
+        "question": "?'אני אוהב לבשל' Переведите эту фразу с иврита на русский:",
+        "answers": [
+          "Я люблю читать",
+          "Я люблю готовить",
+          "Я люблю спать",
+          "Я люблю плавать"
+        ],
+        "correct": 1,
+        "hint": "Это действие выполняется на кухне."
+      },
+      {
+        "question": "?'מחשב' Переведите это еврейское слово на русский:",
+        "answers": [
+          "Телевизор",
+          "Радио",
+          "Компьютер",
+          "Телефон"
+        ],
+        "correct": 2,
+        "hint": "Устройство, используемое для работы, просмотра интернета и программирования."
+      },
+      {
+        "question": "?'מה השעה?' Переведите эту фразу с иврита на русский:",
+        "answers": [
+          "Как дела?",
+          "Как тебя зовут?",
+          "Где туалет?",
+          "Который час?"
+        ],
+        "correct": 3,
+        "hint": "Вы спрашиваете это, когда вам нужно знать текущее время."
+      }
+    ]
+  }
+}
