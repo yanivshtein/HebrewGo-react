@@ -6,7 +6,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen flex items-center justify-center text-black dark:text-white transition-colors duration-300">
       <div dir="rtl" className="w-full max-w-xl mx-auto flex flex-col items-center text-center space-y-6 p-4">
 
 
