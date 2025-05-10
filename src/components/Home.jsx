@@ -16,7 +16,7 @@ function Home() {
         {/* כפתורי ניווט */}
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => navigate('/')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">בית</button>
-          <button onClick={() => navigate('/questions')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">שאלון</button>
+          <button onClick={() => navigate('/questions')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">התחל משחק</button>
           <button onClick={() => navigate('/settings')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">הגדרות</button>
           <button onClick={() => navigate('/login')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">התחברות</button>
         </div>

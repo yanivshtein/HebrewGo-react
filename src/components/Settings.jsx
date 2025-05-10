@@ -1,6 +1,8 @@
 // src/components/Settings.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import flags from 'emoji-flags';
+
 
 function Settings() {
   const navigate = useNavigate();
@@ -62,9 +64,9 @@ function Settings() {
               onChange={(e) => setLang(e.target.value)}
               className="w-full p-2 border rounded bg-white dark:bg-gray-700"
             >
-              <option value="us">אנגלית</option>
-              <option value="es">ספרדית</option>
-              <option value="ru">רוסית</option>
+              <option value="us">English</option>
+              <option value="es">Español</option>
+              <option value="ru">Русский</option>
             </select>
           </div>
 
