@@ -74,6 +74,11 @@ function Questions() {
     if (selected !== null) return;
 
     setSelected(idx);
+    setTimeout(() => {
+      setToast(null);
+      loadNextQuestion();
+    }, 1500);
+
 
     if (idx === question.correct) {
       setCorrectCount((c) => c + 1);
