@@ -196,7 +196,7 @@ function Questions() {
               onClick={() => navigate('/')}
               className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
             >
-              חזרה לעמוד הראשי
+              חזרה לעמוד הראשיs
             </button>
           </div>
         </div>
