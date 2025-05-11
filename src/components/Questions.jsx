@@ -54,7 +54,7 @@ function Questions() {
             setTimeout(() => {
               setToast(null);
               loadNextQuestion();
-              setLocked(false); // ✅ שחרור נעילה
+              setLocked(false);
             }, 1000);
           }
           return 30;
@@ -67,7 +67,6 @@ function Questions() {
 
   const getNextQuestionIndex = () => {
     const correctSet = new Set(correctIndexes);
-
     if (seen.size >= MAX_QUESTIONS) return null;
 
     let index, attempts = 0;
@@ -152,6 +151,8 @@ function Questions() {
     <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen transition-colors duration-300">
       <div className={`relative z-10 ${showEndModal ? 'pointer-events-none filter blur-sm' : ''}`}>
         <div className="max-w-4xl mx-auto flex flex-col p-4 space-y-4">
+
+          {/* Header */}
           <header className="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
             <button onClick={() => navigate('/')} className="text-xl font-semibold hover:underline">← חזרה לעמוד ראשי</button>
             <div className="flex items-center mx-3 gap-2">
@@ -165,6 +166,7 @@ function Questions() {
             </div>
           </header>
 
+          {/* Question Section */}
           <main className="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg flex-grow">
             <h2 className="text-2xl font-bold mb-4 text-right">{question.question}</h2>
 
@@ -190,25 +192,31 @@ function Questions() {
               })}
             </ul>
 
-            <button
-              className="mt-6 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500"
-              onClick={() => setShowHint(true)}
-            >
-              הצג רמז
-            </button>
+            {/* Hint + Falafel Row */}
+            <div className="mt-6 flex items-center justify-between">
+              <button
+                className="px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500"
+                onClick={() => setShowHint(true)}
+              >
+                הצג רמז
+              </button>
+              <div className="text-lg text-gray-700 dark:text-gray-200 flex items-center gap-1">
+                <span>{correctCount}</span>
+                <span className="text-xl"> X 🧆 </span>
+              </div>
+            </div>
+
+            {/* Hint Text */}
             {showHint && (
               <div className="mt-2 p-3 bg-yellow-100 dark:bg-yellow-900 rounded text-right">
                 💡 {question.hint}
               </div>
             )}
           </main>
-
-          <footer className="text-right text-lg mt-4">
-            סך כל הפלאפלים שצברת : {correctCount} 🧆
-          </footer>
         </div>
       </div>
 
+      {/* Toast */}
       {toast && (
         <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg text-white shadow-xl text-lg transition-opacity duration-300 z-50
           ${toast.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
@@ -216,6 +224,7 @@ function Questions() {
         </div>
       )}
 
+      {/* End Game Modal */}
       {showEndModal && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-md">
