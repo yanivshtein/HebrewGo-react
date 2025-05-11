@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import questionsData from './questions.json';
 
-// Import result images based on score
 import ball0 from '../images/ball0.png';
 import ball1 from '../images/ball1.png';
 import ball2 from '../images/ball2.png';
@@ -10,14 +9,22 @@ import ball3 from '../images/ball3.png';
 import ball4 from '../images/ball4.png';
 import ball5 from '../images/ball5.png';
 import ball6 from '../images/ball6.png';
+import ball7 from '../images/ball7.png';
+import ball8 from '../images/ball8.png';
+import ball9 from '../images/ball9.png';
+import ball10 from '../images/ball10.png';
 
 function Questions() {
-  const MAX_QUESTIONS = 6;
+  const MAX_QUESTIONS = 10;
+  const MAX_QUESTIONS_PER_CATEGORY = 20;
   const navigate = useNavigate();
+
   const lang = localStorage.getItem('userLang');
   const difficulty = localStorage.getItem('userDifficulty');
   const questionsList = questionsData[lang][difficulty];
+  const storageKey = `correct_${lang}_${difficulty}`;
 
+  const [locked, setLocked] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(null);
   const [seen, setSeen] = useState(new Set());
   const [selected, setSelected] = useState(null);
@@ -26,35 +33,70 @@ function Questions() {
   const [time, setTime] = useState(30);
   const [toast, setToast] = useState(null);
   const [showEndModal, setShowEndModal] = useState(false);
+  const [correctIndexes, setCorrectIndexes] = useState(() => {
+    const saved = localStorage.getItem(storageKey);
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    setSeen(new Set());
+  }, [lang, difficulty]);
+
+  const currentNumber = seen.size;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTime((t) => {
         if (t <= 1) {
-          setToast({ message: '❌ תם הזמן!', type: 'error' });
-          setTimeout(() => {
-            setToast(null);
-            loadNextQuestion();
-          }, 1000);
+          if (!locked) {
+            setLocked(true);
+            setToast({ message: '❌ תם הזמן!', type: 'error' });
+            setTimeout(() => {
+              setToast(null);
+              loadNextQuestion();
+              setLocked(false); // ✅ שחרור נעילה
+            }, 1000);
+          }
           return 30;
         }
         return t - 1;
       });
     }, 1000);
-
     return () => clearInterval(interval);
-  }, [questionIndex]);
+  }, [questionIndex, locked]);
 
   const getNextQuestionIndex = () => {
-    if (seen.size >= questionsList.length || seen.size >= MAX_QUESTIONS) return null;
-    let index;
+    const correctSet = new Set(correctIndexes);
+
+    if (seen.size >= MAX_QUESTIONS) return null;
+
+    let index, attempts = 0;
     do {
       index = Math.floor(Math.random() * questionsList.length);
-    } while (seen.has(index));
+      attempts++;
+      if (attempts > 1000) return null;
+    } while (correctSet.has(index) || seen.has(index));
+
     return index;
   };
 
   const loadNextQuestion = () => {
+    if (correctIndexes.length === MAX_QUESTIONS_PER_CATEGORY) {
+      const restart = window.confirm(
+        "✔️ סיימת את כל השאלות בקטגוריה הזאת!\n\n" +
+        "האם תרצה להתחיל את השלב מחדש?\n\n" +
+        "שים לב: אם תבחר להתחיל מחדש, ההתקדמות שלך תימחק."
+      );
+
+      if (restart) {
+        localStorage.removeItem(storageKey);
+        window.location.reload();
+      } else {
+        navigate('/');
+      }
+      return;
+    }
+
     const nextIndex = getNextQuestionIndex();
     if (nextIndex === null) {
       setShowEndModal(true);
@@ -63,6 +105,7 @@ function Questions() {
       setQuestionIndex(nextIndex);
       setSelected(null);
       setShowHint(false);
+      setTime(30);
     }
   };
 
@@ -72,16 +115,15 @@ function Questions() {
 
   const handleAnswerClick = (idx) => {
     if (selected !== null) return;
-
     setSelected(idx);
-    setTimeout(() => {
-      setToast(null);
-      loadNextQuestion();
-    }, 1500);
-
 
     if (idx === question.correct) {
       setCorrectCount((c) => c + 1);
+      setCorrectIndexes((prev) => {
+        const updated = [...prev, questionIndex];
+        localStorage.setItem(storageKey, JSON.stringify(updated));
+        return updated;
+      });
       setToast({ message: '✅ תשובה נכונה!', type: 'success' });
     } else {
       setToast({ message: '❌ תשובה שגויה!', type: 'error' });
@@ -97,16 +139,10 @@ function Questions() {
     `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}`;
 
   const getResultImage = () => {
-    switch (correctCount) {
-      case 0: return ball0;
-      case 1: return ball1;
-      case 2: return ball2;
-      case 3: return ball3;
-      case 4: return ball4;
-      case 5: return ball5;
-      case 6: return ball6;
-      default: return ball4;
-    }
+    return [
+      ball0, ball1, ball2, ball3, ball4,
+      ball5, ball6, ball7, ball8, ball9, ball10
+    ][correctCount] || ball0;
   };
 
   if (questionIndex === null) return <div className="p-4">טוען שאלה...</div>;
@@ -114,14 +150,14 @@ function Questions() {
 
   return (
     <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen transition-colors duration-300">
-
-      {/* Game Content - Freezes & blurs on modal */}
       <div className={`relative z-10 ${showEndModal ? 'pointer-events-none filter blur-sm' : ''}`}>
         <div className="max-w-4xl mx-auto flex flex-col p-4 space-y-4">
-
-          {/* Header */}
           <header className="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
             <button onClick={() => navigate('/')} className="text-xl font-semibold hover:underline">← חזרה לעמוד ראשי</button>
+            <div className="flex items-center mx-3 gap-2">
+              <span className="text-base font-semibold text-gray-700 dark:text-gray-300">שאלה</span>
+              <span className="bg-blue-500 text-white rounded-full px-3 py-1 shadow-md">{currentNumber}</span>
+            </div>
             <div className="bg-white py-1 px-3 rounded shadow dark:bg-gray-100">
               <span className={time <= 5 ? 'text-red-600 font-bold' : 'text-blue-600'}>
                 {formatTime(time)}
@@ -129,7 +165,6 @@ function Questions() {
             </div>
           </header>
 
-          {/* Question Section */}
           <main className="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg flex-grow">
             <h2 className="text-2xl font-bold mb-4 text-right">{question.question}</h2>
 
@@ -155,7 +190,6 @@ function Questions() {
               })}
             </ul>
 
-            {/* Hint button */}
             <button
               className="mt-6 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500"
               onClick={() => setShowHint(true)}
@@ -169,32 +203,23 @@ function Questions() {
             )}
           </main>
 
-          {/* Falafel counter */}
           <footer className="text-right text-lg mt-4">
             סך כל הפלאפלים שצברת : {correctCount} 🧆
           </footer>
         </div>
       </div>
 
-      {/* Toast */}
       {toast && (
-        <div
-          className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg text-white shadow-xl text-lg transition-opacity duration-300 z-50
-          ${toast.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}
-        >
+        <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg text-white shadow-xl text-lg transition-opacity duration-300 z-50
+          ${toast.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
           {toast.message}
         </div>
       )}
 
-      {/* End Game Modal */}
       {showEndModal && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-md">
-            <img
-              src={getResultImage()}
-              alt="תוצאה"
-              className="w-32 mx-auto mb-4"
-            />
+            <img src={getResultImage()} alt="תוצאה" className="w-32 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-2">סיימת את המשחק!</h2>
             <p className="text-lg mb-4">צברת {correctCount} פלאפלים 🧆</p>
             <button

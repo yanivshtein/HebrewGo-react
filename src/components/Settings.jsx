@@ -25,9 +25,19 @@ function Settings() {
     localStorage.setItem('userName', name);
     localStorage.setItem('userLang', lang);
     localStorage.setItem('userDifficulty', difficulty);
+    console.log('שם משתמש:', name);
+    console.log('שפה:', lang);
+    console.log('רמת קושי:', difficulty);
     alert('ההגדרות נשמרו בהצלחה!');
     navigate('/');
   };
+
+  const clearStorage = () => {
+  localStorage.clear();
+  alert("🧹 כל הנתונים נמחקו!");
+  navigate('/');
+};
+
 
   return (
     <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen p-4 transition-colors duration-300">
@@ -90,6 +100,15 @@ function Settings() {
           >
             שמור הגדרות
           </button>
+          <button
+            onClick={clearStorage}
+            className="w-full mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+          >
+          נקה נתונים ואפס משחק
+          </button>
+
+
+
         </main>
       </div>
     </div>
