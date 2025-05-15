@@ -1,46 +1,66 @@
-// src/components/Settings.jsx
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import flags from 'emoji-flags';
-
 
 function Settings() {
   const navigate = useNavigate();
-
   const [name, setName] = useState('');
   const [lang, setLang] = useState('us');
   const [difficulty, setDifficulty] = useState('easy');
 
-  // טען נתונים מ-localStorage אם קיימים
   useEffect(() => {
     const storedName = localStorage.getItem('userName');
-    const storedLang = localStorage.getItem('userLang');
-    const storedDifficulty = localStorage.getItem('userDifficulty');
-    if (storedName) setName(storedName);
-    if (storedLang) setLang(storedLang);
-    if (storedDifficulty) setDifficulty(storedDifficulty);
+    if (storedName) {
+      setName(storedName);
+
+      fetch(`http://localhost:5000/api/user/${storedName}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.language) setLang(data.language);
+          if (data.difficulty) setDifficulty(data.difficulty);
+        })
+        .catch((err) => console.error('Failed to fetch user settings:', err));
+    }
   }, []);
 
-  const saveSettings = () => {
-    localStorage.setItem('userName', name);
-    localStorage.setItem('userLang', lang);
-    localStorage.setItem('userDifficulty', difficulty);
-    alert('ההגדרות נשמרו בהצלחה!');
-    navigate('/');
+  const saveSettings = async () => {
+    const userData = {
+      name,
+      language: lang,
+      difficulty,
+      progress: {
+        easy: [],
+        medium: [],
+        hard: [],
+      },
+    };
+
+    try {
+      await fetch('http://localhost:5000/api/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(userData),
+      });
+
+      localStorage.setItem('userName', name);
+      localStorage.setItem('userLang', lang);
+      localStorage.setItem('userDifficulty', difficulty);
+      alert('✅ ההגדרות נשמרו בהצלחה!');
+      navigate('/');
+    } catch (err) {
+      console.error('Failed to save user:', err);
+      alert('שגיאה בשמירת ההגדרות 😢');
+    }
   };
 
   const clearStorage = () => {
-  localStorage.clear();
-  alert("🧹 כל הנתונים נמחקו!");
-  navigate('/');
-};
-
+    localStorage.clear();
+    alert("🧹 כל הנתונים נמחקו!");
+    navigate('/');
+  };
 
   return (
     <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen p-4 transition-colors duration-300">
       <div className="max-w-2xl mx-auto flex flex-col space-y-6">
-        
-        {/* Header */}
         <header className="flex justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
           <button onClick={() => navigate('/')} className="text-xl font-semibold hover:underline">
             ← חזרה לעמוד ראשי
@@ -50,7 +70,6 @@ function Settings() {
         <main className="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg">
           <h1 className="text-2xl font-bold text-center mb-6">הגדרות</h1>
 
-          {/* Name */}
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium mb-2">שם</label>
             <input
@@ -63,7 +82,6 @@ function Settings() {
             />
           </div>
 
-          {/* Language */}
           <div className="mb-4">
             <label className="block text-sm font-medium mb-2">בחר שפה</label>
             <select
@@ -77,7 +95,6 @@ function Settings() {
             </select>
           </div>
 
-          {/* Difficulty */}
           <div className="mb-4">
             <label className="block text-sm font-medium mb-2">בחר רמת קושי</label>
             <select
@@ -97,15 +114,13 @@ function Settings() {
           >
             שמור הגדרות
           </button>
+
           <button
             onClick={clearStorage}
             className="w-full mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
           >
-          נקה נתונים ואפס משחק
+            נקה נתונים ואפס משחק
           </button>
-
-
-
         </main>
       </div>
     </div>

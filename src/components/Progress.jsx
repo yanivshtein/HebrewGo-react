@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ✅ Progress.jsx (updated to fetch progress from MongoDB)
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import lvl0 from '../images/lvl0.png'; 
 import lvl1 from '../images/lvl1.png';
@@ -8,17 +9,24 @@ import lvl3 from '../images/lvl3.png';
 function Progress() {
   const MAX_QUESTIONS = 20;
   const [selectedLang, setSelectedLang] = useState('us');
+  const [progress, setProgress] = useState({ easy: [], medium: [], hard: [] });
   const navigate = useNavigate();
 
-  const getCount = (level) => {
-    const data = localStorage.getItem(`correct_${selectedLang}_${level}`);
-    return data ? JSON.parse(data).length : 0;
-  };
+  const userName = localStorage.getItem('userName');
 
-  const userName = localStorage.getItem('userName')
-  const easy = getCount('easy');
-  const medium = getCount('medium');
-  const hard = getCount('hard');
+  useEffect(() => {
+    fetch(`http://localhost:5000/api/user/${userName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.progress) {
+          setProgress(data.progress);
+        }
+      });
+  }, [selectedLang]);
+
+  const easy = progress.easy?.length || 0;
+  const medium = progress.medium?.length || 0;
+  const hard = progress.hard?.length || 0;
   const falafels = easy + medium + hard;
 
   const easyDone = easy >= MAX_QUESTIONS;

@@ -6,7 +6,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.activeElement.blur(); 
+    document.activeElement.blur();
   }, []);
 
   return (
@@ -19,18 +19,7 @@ function Home() {
         {/* כפתורי ניווט */}
         <div className="flex flex-wrap justify-center gap-4">
           <button
-            onClick={() => {
-              const userName = localStorage.getItem('userName');
-              const lang = localStorage.getItem('userLang');
-              const difficulty = localStorage.getItem('userDifficulty');
-
-              if (!userName || !lang || !difficulty) {
-                alert("🔒 עליך להגדיר שם משתמש, שפה ורמת קושי לפני שתוכל להתחיל לשחק.");
-                return;
-              }
-
-              navigate('/questions');
-            }}
+            onClick={() => navigate('/questions')}
             className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
           >
             התחל משחק
@@ -44,21 +33,18 @@ function Home() {
           </button>
 
           <button
-            onClick={() => {
-              const userName = localStorage.getItem('userName');
-              const lang = localStorage.getItem('userLang');
-              const difficulty = localStorage.getItem('userDifficulty');
-
-              if (!userName || !lang || !difficulty) {
-                alert("🔒 עליך להגדיר שם משתמש, שפה ורמת קושי על מנת לצפות בהתקדמות.");
-                return;
-              }
-
-              navigate('/Progress');
-            }}
+            onClick={() => navigate('/progress')}
             className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
           >
             צפייה בהתקדמות
+          </button>
+
+          {/* התחברות */}
+          <button
+            onClick={() => navigate('/login')}
+            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
+          >
+            התחברות
           </button>
         </div>
 
@@ -66,7 +52,7 @@ function Home() {
         <p className="text-lg">
           🎓 ברוכים הבאים לאפליקציית הלמידה <strong>Hebrew Go</strong>
         </p>
-        <p>כדי להתחיל, עברו למסך ההגדרות והזינו את שם המשתמש, השפה המועדפת ורמת הקושי.</p>
+        <p>כדי להתחיל, אנא התחבר במסך ההתחברות והזינו את שם המשתמש והרשומות הרצויות.</p>
       </div>
     </div>
   );
