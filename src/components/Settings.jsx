@@ -25,9 +25,6 @@ function Settings() {
     localStorage.setItem('userName', name);
     localStorage.setItem('userLang', lang);
     localStorage.setItem('userDifficulty', difficulty);
-    console.log('שם משתמש:', name);
-    console.log('שפה:', lang);
-    console.log('רמת קושי:', difficulty);
     alert('ההגדרות נשמרו בהצלחה!');
     navigate('/');
   };
