@@ -19,21 +19,22 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => console.log('✅ Connected to MongoDB'));
 
-// User Schema
 const userSchema = new mongoose.Schema({
   name:       { type: String, required: true, unique: true },
   password:   { type: String, required: true },
+  gender:     { type: String, enum: ['male', 'female', 'other'], default: 'other' }, 
   progress:   {
     us:   { easy: [Number], medium: [Number], hard: [Number] },
     es:   { easy: [Number], medium: [Number], hard: [Number] },
     ru:   { easy: [Number], medium: [Number], hard: [Number] }
   }
 });
+
 const User = mongoose.model('User', userSchema);
 
 // Registration endpoint
 app.post('/api/register', async (req, res) => {
-  const { username, password, progress } = req.body;
+  const { username, password, progress, gender } = req.body; // 👈 gender נוסף כאן
   if (!username || !password) {
     return res.status(400).json({ error: 'Username and password are required.' });
   }
@@ -41,8 +42,8 @@ app.post('/api/register', async (req, res) => {
     if (await User.findOne({ name: username })) {
       return res.status(400).json({ error: 'User already exists.' });
     }
-    // Store password in plain text (no bcrypt)
-    const user = new User({ name: username, password, progress });
+
+    const user = new User({ name: username, password, progress, gender }); // 👈 gender נוסף כאן
     await user.save();
     res.status(201).json({ success: true });
   } catch (err) {
@@ -50,6 +51,7 @@ app.post('/api/register', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
 
 
 
