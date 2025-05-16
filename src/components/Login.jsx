@@ -16,11 +16,35 @@ function Login() {
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault();
-    console.log('Logging in with', userName, password);
-    // TODO: call login API, handle auth
-    navigate('/questions');
-  };
+  e.preventDefault();
+  if (!userName || !password) {
+    alert('אנא מלא שם משתמש וסיסמה.');
+    return;
+  }
+
+  try {
+    const res = await fetch('http://localhost:5000/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: userName, password })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      alert(`התחברות נכשלה: ${data.error || res.statusText}`);
+    } else {
+      // Optionally save token or user data in context/localStorage here
+      alert('התחברות הצליחה!');
+      navigate('/');
+      localStorage.setItem('userName', userName)
+    }
+  } catch (err) {
+    console.error('Login error:', err);
+    alert('שגיאה בשרת במהלך התחברות.');
+  }
+};
+
 
   const handleRegister = async () => {
     if (!userName || !password) {

@@ -9,8 +9,9 @@ import lvl3 from '../images/lvl3.png';
 function Progress() {
   const MAX_QUESTIONS = 20;
   const [selectedLang, setSelectedLang] = useState('us');
-  const [progress, setProgress] = useState({ easy: [], medium: [], hard: [] });
+  const [progress, setProgress] = useState({});
   const navigate = useNavigate();
+  
 
   const userName = localStorage.getItem('userName');
 
@@ -18,16 +19,19 @@ function Progress() {
     fetch(`http://localhost:5000/api/user/${userName}`)
       .then((res) => res.json())
       .then((data) => {
+        console.log('📦 Progress from DB:', data.progress); // בדיקה
         if (data.progress) {
           setProgress(data.progress);
         }
       });
   }, [selectedLang]);
 
-  const easy = progress.easy?.length || 0;
-  const medium = progress.medium?.length || 0;
-  const hard = progress.hard?.length || 0;
-  const falafels = easy + medium + hard;
+  const easy = progress[selectedLang]?.easy?.length || 0;
+  const medium = progress[selectedLang]?.medium?.length || 0;
+  const hard = progress[selectedLang]?.hard?.length || 0;
+
+  const falafels = easy + medium + hard; 
+
 
   const easyDone = easy >= MAX_QUESTIONS;
   const mediumDone = medium >= MAX_QUESTIONS;

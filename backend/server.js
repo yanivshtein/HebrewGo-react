@@ -51,36 +51,71 @@ app.post('/api/register', async (req, res) => {
   }
 });
 
-// Save or update user progress/settings
-app.post('/api/save', async (req, res) => {
-  const { name, language, difficulty, progress } = req.body;
+
+
+app.post('/api/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Username and password are required.' });
+  }
+
   try {
-    let user = await User.findOne({ name });
-    if (user) {
-      user.language = language;
-      user.difficulty = difficulty;
-      user.progress = progress;
-    } else {
-      return res.status(400).json({ error: 'User does not exist.' });
+    const user = await User.findOne({ name: username });
+    if (!user || user.password !== password) {
+      return res.status(401).json({ error: 'Invalid username or password.' });
     }
-    await user.save();
-    res.status(200).json({ success: true });
-  } catch (error) {
-    console.error('Error saving user:', error);
-    res.status(500).json({ success: false, error: error.message });
+
+    // Optional: exclude password from response
+    const { password: _, ...userWithoutPassword } = user.toObject();
+
+    res.status(200).json({ message: 'Login successful', user: userWithoutPassword });
+  } catch (err) {
+    console.error('Login error:', err);
+    res.status(500).json({ error: 'Internal server error.' });
   }
 });
 
-// Get user by name
 app.get('/api/user/:name', async (req, res) => {
   try {
-    const user = await User.findOne({ name: req.params.name }).select('-password');
+    const user = await User.findOne({ name: req.params.name });
     res.status(200).json(user || {});
   } catch (error) {
-    console.error('Error fetching user:', error);
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ error: error.message });
   }
 });
+
+app.post('/api/save', async (req, res) => {
+  const { name, language, difficulty, progress } = req.body;
+
+  if (!name || !language || !difficulty || !progress) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  try {
+    const user = await User.findOne({ name });
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // ודא שקיים progress לפי השפה, ואם לא – צור אותו
+    if (!user.progress[language]) {
+      user.progress[language] = { easy: [], medium: [], hard: [] };
+    }
+
+    // עדכון ספציפי לפי השפה ורמת הקושי
+    user.progress[language][difficulty] = progress[language][difficulty];
+
+    await user.save();
+    res.status(200).json({ success: true });
+  } catch (error) {
+    console.error('Error saving user progress:', error);
+    res.status(500).json({ error: 'Failed to save progress' });
+  }
+});
+
+
 
 // Start server
 app.listen(PORT, () => console.log(`🚀 Server is running at http://localhost:${PORT}`));

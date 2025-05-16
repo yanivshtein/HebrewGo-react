@@ -50,24 +50,24 @@ function Questions() {
   }, [lang, difficulty]);
 
   useEffect(() => {
-    // Only fetch user data once
-    if (!initialLoadComplete.current) {
-      fetch(`http://localhost:5000/api/user/${userName}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.progress && data.progress[difficulty]) {
-            setCorrectIndexes(data.progress[difficulty]);
-            
-            // בדיקה האם המשתמש ענה על כל השאלות בקטגוריה הנוכחית
-            if (data.progress[difficulty].length >= MAX_QUESTIONS_PER_CATEGORY) {
-              setShowRestartModal(true);
-            }
+  // Only fetch user data once
+  if (!initialLoadComplete.current) {
+    fetch(`http://localhost:5000/api/user/${userName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.progress && data.progress[lang] && data.progress[lang][difficulty]) {
+          setCorrectIndexes(data.progress[lang][difficulty]);
+
+          // בדיקה האם המשתמש ענה על כל השאלות בקטגוריה הנוכחית
+          if (data.progress[lang][difficulty].length >= MAX_QUESTIONS_PER_CATEGORY) {
+            setShowRestartModal(true);
           }
-          setUserLoaded(true);
-          initialLoadComplete.current = true; // Mark initialization as complete
-        });
-    }
-  }, [difficulty, userName]);
+        }
+        setUserLoaded(true);
+        initialLoadComplete.current = true; // Mark initialization as complete
+      });
+  }
+  }, [difficulty, lang, userName]);
 
   // פונקציה חדשה לבדיקת האם המשתמש ענה על כל השאלות בקטגוריה
   const checkIfAllQuestionsAnswered = (answeredQuestions) => {
@@ -129,41 +129,46 @@ function Questions() {
   };
 
   const saveProgressToDB = (updatedProgress) => {
-    fetch('http://localhost:5000/api/save', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: userName,
-        language: lang,
-        difficulty,
-        progress: {
+  fetch('http://localhost:5000/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: userName,
+      language: lang,
+      difficulty,
+      progress: {
+        [lang]: {
           [difficulty]: updatedProgress,
         },
-      }),
-    });
-  };
+      },
+    }),
+  });
+};
 
   // פונקציה לאיפוס ההתקדמות והתחלה מחדש
   const handleRestart = () => {
-    fetch('http://localhost:5000/api/save', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: userName,
-        language: lang,
-        difficulty,
-        progress: {
+  fetch('http://localhost:5000/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: userName,
+      language: lang,
+      difficulty,
+      progress: {
+        [lang]: {
           [difficulty]: [],
         },
-      }),
-    }).then(() => {
-      setCorrectIndexes([]);
-      setSeenQuestions([]);
-      setCurrentQuestionNumber(1);
-      setShowRestartModal(false);
-      loadNextQuestion();
-    });
-  };
+      },
+    }),
+  }).then(() => {
+    setCorrectIndexes([]);
+    setSeenQuestions([]);
+    setCurrentQuestionNumber(1);
+    setShowRestartModal(false);
+    loadNextQuestion();
+  });
+};
+
 
   const loadNextQuestion = () => {
     // For debugging - use this to track how questions are loaded
