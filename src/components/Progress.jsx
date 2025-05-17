@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ✅ Progress.jsx (updated to fetch progress from MongoDB)
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import lvl0 from '../images/lvl0.png'; 
 import lvl1 from '../images/lvl1.png';
@@ -8,18 +9,29 @@ import lvl3 from '../images/lvl3.png';
 function Progress() {
   const MAX_QUESTIONS = 20;
   const [selectedLang, setSelectedLang] = useState('us');
+  const [progress, setProgress] = useState({});
   const navigate = useNavigate();
+  
 
-  const getCount = (level) => {
-    const data = localStorage.getItem(`correct_${selectedLang}_${level}`);
-    return data ? JSON.parse(data).length : 0;
-  };
+  const userName = localStorage.getItem('userName');
 
-  const username = localStorage.getItem('userName')
-  const easy = getCount('easy');
-  const medium = getCount('medium');
-  const hard = getCount('hard');
-  const falafels = easy + medium + hard;
+  useEffect(() => {
+    fetch(`http://localhost:5000/api/user/${userName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('📦 Progress from DB:', data.progress); // בדיקה
+        if (data.progress) {
+          setProgress(data.progress);
+        }
+      });
+  }, [selectedLang]);
+
+  const easy = progress[selectedLang]?.easy?.length || 0;
+  const medium = progress[selectedLang]?.medium?.length || 0;
+  const hard = progress[selectedLang]?.hard?.length || 0;
+
+  const falafels = easy + medium + hard; 
+
 
   const easyDone = easy >= MAX_QUESTIONS;
   const mediumDone = medium >= MAX_QUESTIONS;
@@ -54,7 +66,7 @@ function Progress() {
 
       {/* סטטיסטיקה */}
       <div className="text-lg text-right space-y-2 max-w-md mx-auto text-gray-600 dark:text-gray-300 opacity-80">
-        <p className="text-xl font-bold text-right">שלום, {username} 👋</p>
+        <p className="text-xl font-bold text-right">שלום, {userName} 👋</p>
         <p>🔰 קל: {easy} מתוך {MAX_QUESTIONS} (נותרו {MAX_QUESTIONS - easy})</p>
         <p>⚔️ בינוני: {medium} מתוך {MAX_QUESTIONS} (נותרו {MAX_QUESTIONS - medium})</p>
         <p>🔥 קשה: {hard} מתוך {MAX_QUESTIONS} (נותרו {MAX_QUESTIONS - hard})</p>
