@@ -12,7 +12,7 @@ app.use(express.json()); // Parse JSON request bodies
 // Connect to MongoDB
 mongoose.connect(
   'mongodb+srv://hebgoAdmin:HebGo1234%21@hebgo.ungpego.mongodb.net/hebrewGo?retryWrites=true&w=majority&appName=HebGo',
-  {}
+  {} 
 );
 // Confirm connection
 const db = mongoose.connection;
