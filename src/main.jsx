@@ -8,23 +8,30 @@ import Questions from './components/Questions';
 import Settings from './components/Settings';
 import Progress from './components/Progress';
 import Login from './components/Login';
+import Register from './components/Register';
+import ProtectedRoute from './components/ProtectedRoute';
+import PlacementTest from './components/PlacementTest';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        {/* Home */}
-        <Route path="/" element={<Home />} />
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/login" element={<Login />} />
+  <Route path="/register" element={<Register />} />
+  <Route path="/placement" element={<PlacementTest />} />
 
-        {/* Authentication */}
-        <Route path="/login" element={<Login />} />
-
-        {/* Game screens */}
-        <Route path="/questions" element={<Questions />} />
-        <Route path="/settings" element={<Settings />} />
-        {/* Note: lowecase `/progress` to match `navigate('/progress')` in code */}
-        <Route path="/progress" element={<Progress />} />
-      </Routes>
+  {/* protected pages */}
+  <Route path="/questions" element={
+    <ProtectedRoute><Questions /></ProtectedRoute>
+  } />
+  <Route path="/settings" element={
+    <ProtectedRoute><Settings /></ProtectedRoute>
+  } />
+  <Route path="/progress" element={
+    <ProtectedRoute><Progress /></ProtectedRoute>
+  } />
+</Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

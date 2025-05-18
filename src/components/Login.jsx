@@ -115,7 +115,8 @@ function Login() {
             </button>
             <button
               type="button"
-              onClick={handleRegister}
+              onClick={() => navigate('/register')}
+
               className="flex-1 py-3 bg-green-500 text-white font-semibold rounded-lg shadow hover:bg-green-600 transition-colors duration-200"
             >
               הרשמה

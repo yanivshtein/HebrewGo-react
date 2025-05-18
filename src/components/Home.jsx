@@ -28,29 +28,33 @@ function Home() {
         {/* לוגו */}
         <img src={logo} alt="Hebrew Go Logo" className="h-80" />
 
-        {/* כפתורי ניווט */}
-        <div className="flex flex-wrap justify-center gap-4">
-          <button onClick={() => navigate('/questions')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-            התחל משחק
-          </button>
-          <button onClick={() => navigate('/settings')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-            הגדרות
-          </button>
-          <button onClick={() => navigate('/progress')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-            צפייה בהתקדמות
-          </button>
-          <button onClick={() => navigate('/login')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-            התחברות
-          </button>
-          <button onClick={handleLogout} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
-            התנתק
-          </button>
-        </div>
+{/* כפתורי ניווט */}
+<div className="flex flex-wrap justify-center gap-4">
+  {localStorage.getItem('userName') ? (
+    <>
+      <button onClick={() => navigate('/questions')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+        התחל משחק
+      </button>
+      <button onClick={() => navigate('/progress')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+        צפייה בהתקדמות
+      </button>
+      <button onClick={() => navigate('/settings')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+        הגדרות
+      </button>
+      <button onClick={handleLogout} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+        התנתק
+      </button>
+    </>
+  ) : (
+    <button onClick={() => navigate('/login')} className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded">
+      התחברות
+    </button>
+  )}
+</div>
 
         <p className="text-lg">
           🎓 ברוכים הבאים לאפליקציית הלמידה <strong>Hebrew Go</strong>
         </p>
-        <p>כדי להתחיל, אנא התחבר במסך ההתחברות והזינו את שם המשתמש והרשומות הרצויות.</p>
       </div>
 
       {/* ✅ טוסט הודעה */}
