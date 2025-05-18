@@ -23,7 +23,12 @@ function Questions() {
   const userName = localStorage.getItem('userName');
   const lang = localStorage.getItem('userLang');
   const difficulty = localStorage.getItem('userDifficulty');
-  const questionsList = questionsData[lang][difficulty];
+  //const questionsList = questionsData[lang][difficulty];
+  const questionsList = questionsData?.[lang]?.[difficulty] || [];
+  if (!lang || !difficulty || questionsList.length === 0) {
+  return <div className="p-4 text-red-600">לא ניתן לטעון את השאלות. ודא שהשפה והרמה נבחרו כראוי.</div>;
+}
+
 
   const [locked, setLocked] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(null);

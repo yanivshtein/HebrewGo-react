@@ -5,7 +5,8 @@
         "question": "?'דלת' What is the correct translation of the Hebrew word",
         "answers": ["Window", "Chair", "Door", "Book"],
         "correct": 2,
-        "hint": "It's a basic item in a house. You use it to enter or exit a room."
+        "hint": "It's a basic item in a house. You use it to enter or exit a room.",
+        "authohint": "You open it for guests"
       },
       {
         "question": "?'חתול' What is the correct translation of the Hebrew word",
