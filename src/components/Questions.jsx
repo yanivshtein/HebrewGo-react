@@ -15,76 +15,57 @@ import ball9 from '../images/ball9.png';
 import ball10 from '../images/ball10.png';
 
 function Questions() {
-  // קביעת מספר מרבי של שאלות למשחק
-  const MAX_QUESTIONS = 10; // מספר השאלות המקסימלי למשחק (0-9 = 10 שאלות)
+  const MAX_QUESTIONS = 10;
   const MAX_QUESTIONS_PER_CATEGORY = 20;
   const navigate = useNavigate();
 
   const userName = localStorage.getItem('userName');
   const lang = localStorage.getItem('userLang');
   const difficulty = localStorage.getItem('userDifficulty');
-  //const questionsList = questionsData[lang][difficulty];
   const questionsList = questionsData?.[lang]?.[difficulty] || [];
   if (!lang || !difficulty || questionsList.length === 0) {
-  return <div className="p-4 text-red-600">לא ניתן לטעון את השאלות. ודא שהשפה והרמה נבחרו כראוי.</div>;
-}
-
+    return <div className="p-4 text-red-600">לא ניתן לטעון את השאלות. ודא שהשפה והרמה נבחרו כראוי.</div>;
+  }
 
   const [locked, setLocked] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(null);
-  const [seenQuestions, setSeenQuestions] = useState([]); // מעקב אחר שאלות שנצפו כמערך
+  const [seenQuestions, setSeenQuestions] = useState([]);
   const [selected, setSelected] = useState(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [showHint, setShowHint] = useState(false);
+  const [showAutoHint, setShowAutoHint] = useState(false);
   const [time, setTime] = useState(30);
   const [toast, setToast] = useState(null);
   const [showEndModal, setShowEndModal] = useState(false);
   const [correctIndexes, setCorrectIndexes] = useState([]);
   const [userLoaded, setUserLoaded] = useState(false);
-  const [currentQuestionNumber, setCurrentQuestionNumber] = useState(1); // מונה שאלות נוכחי
-  const [showRestartModal, setShowRestartModal] = useState(false); // מודל חדש לאתחול השאלות
-
-  // Use a ref to track if initial loading is complete
+  const [currentQuestionNumber, setCurrentQuestionNumber] = useState(1);
+  const [showRestartModal, setShowRestartModal] = useState(false);
   const initialLoadComplete = React.useRef(false);
 
   useEffect(() => {
-    // איפוס המונה והרשימות בכל פעם שהשפה או הרמה משתנים
     setSeenQuestions([]);
     setCurrentQuestionNumber(1);
-    initialLoadComplete.current = false; // Reset initialization flag
+    initialLoadComplete.current = false;
   }, [lang, difficulty]);
 
   useEffect(() => {
-  // Only fetch user data once
-  if (!initialLoadComplete.current) {
-    fetch(`http://localhost:5000/api/user/${userName}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.progress && data.progress[lang] && data.progress[lang][difficulty]) {
-          setCorrectIndexes(data.progress[lang][difficulty]);
-
-          // בדיקה האם המשתמש ענה על כל השאלות בקטגוריה הנוכחית
-          if (data.progress[lang][difficulty].length >= MAX_QUESTIONS_PER_CATEGORY) {
-            setShowRestartModal(true);
+    if (!initialLoadComplete.current) {
+      fetch(`http://localhost:5000/api/user/${userName}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.progress && data.progress[lang] && data.progress[lang][difficulty]) {
+            setCorrectIndexes(data.progress[lang][difficulty]);
+            if (data.progress[lang][difficulty].length >= MAX_QUESTIONS_PER_CATEGORY) {
+              setShowRestartModal(true);
+            }
           }
-        }
-        setUserLoaded(true);
-        initialLoadComplete.current = true; // Mark initialization as complete
-      });
-  }
+          setUserLoaded(true);
+          initialLoadComplete.current = true;
+        });
+    }
   }, [difficulty, lang, userName]);
 
-  // פונקציה חדשה לבדיקת האם המשתמש ענה על כל השאלות בקטגוריה
-  const checkIfAllQuestionsAnswered = (answeredQuestions) => {
-    // בדיקה האם המשתמש כבר ענה על כל השאלות בקטגוריה
-    if (answeredQuestions.length >= MAX_QUESTIONS_PER_CATEGORY) {
-      setShowRestartModal(true);
-      return true;
-    }
-    return false;
-  };
-
-  // Load first question only once after user data is loaded
   useEffect(() => {
     if (userLoaded && !showRestartModal && questionIndex === null) {
       loadNextQuestion();
@@ -102,9 +83,13 @@ function Questions() {
               setToast(null);
               loadNextQuestion();
               setLocked(false);
+              setShowAutoHint(false);
             }, 1000);
           }
           return 30;
+        }
+        if (t === 11) {
+          setShowAutoHint(true);
         }
         return t - 1;
       });
@@ -112,99 +97,77 @@ function Questions() {
     return () => clearInterval(interval);
   }, [questionIndex, locked]);
 
-  // פונקציה משופרת לבחירת השאלה הבאה שמוודאת שכל שאלה מופיעה רק פעם אחת ושלא נענתה בעבר
   const getNextQuestionIndex = () => {
-    // יוצרים מערך של אינדקסים אפשריים שעדיין לא נראו במשחק הנוכחי וגם לא נענו בעבר
     const availableQuestions = [];
-    
     for (let i = 0; i < questionsList.length; i++) {
-      // בדיקה שהשאלה לא נראתה במשחק הנוכחי וגם לא נענתה נכון בעבר
       if (!seenQuestions.includes(i) && !correctIndexes.includes(i)) {
         availableQuestions.push(i);
       }
     }
-
-      if (availableQuestions.length === 0) {
-        return null; // אין יותר שאלות זמינות בכלל
-      }
-
-    // בוחרים שאלה אקראית מתוך השאלות הזמינות
+    if (availableQuestions.length === 0) return null;
     const randomIndex = Math.floor(Math.random() * availableQuestions.length);
     return availableQuestions[randomIndex];
   };
 
   const saveProgressToDB = (updatedProgress) => {
-  fetch('http://localhost:5000/api/save', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: userName,
-      language: lang,
-      difficulty,
-      progress: {
-        [lang]: {
-          [difficulty]: updatedProgress,
+    fetch('http://localhost:5000/api/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: userName,
+        language: lang,
+        difficulty,
+        progress: {
+          [lang]: {
+            [difficulty]: updatedProgress,
+          },
         },
-      },
-    }),
-  });
-};
+      }),
+    });
+  };
 
-  // פונקציה לאיפוס ההתקדמות והתחלה מחדש
   const handleRestart = () => {
-  fetch('http://localhost:5000/api/save', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: userName,
-      language: lang,
-      difficulty,
-      progress: {
-        [lang]: {
-          [difficulty]: [],
+    fetch('http://localhost:5000/api/save', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: userName,
+        language: lang,
+        difficulty,
+        progress: {
+          [lang]: {
+            [difficulty]: [],
+          },
         },
-      },
-    }),
-  }).then(() => {
-    setCorrectIndexes([]);
-    setSeenQuestions([]);
-    setCurrentQuestionNumber(1);
-    setShowRestartModal(false);
-    loadNextQuestion();
-  });
-};
-
+      }),
+    }).then(() => {
+      setCorrectIndexes([]);
+      setSeenQuestions([]);
+      setCurrentQuestionNumber(1);
+      setShowRestartModal(false);
+      loadNextQuestion();
+    });
+  };
 
   const loadNextQuestion = () => {
-    // For debugging - use this to track how questions are loaded
-    console.log(`Loading question ${currentQuestionNumber} of ${MAX_QUESTIONS}`);
-    
-    // בדיקה אם המשחק הסתיים (נשאלו כבר MAX_QUESTIONS שאלות)
     if (currentQuestionNumber > MAX_QUESTIONS) {
-      console.log("Game ended: Max questions reached");
       setShowEndModal(true);
       return;
     }
-
-    // בדיקה אם המשתמש ענה כבר על כל השאלות בקטגוריה
     if (correctIndexes.length >= MAX_QUESTIONS_PER_CATEGORY) {
-      console.log("Game ended: All category questions answered");
       setShowRestartModal(true);
       return;
     }
-
     const nextIndex = getNextQuestionIndex();
     if (nextIndex === null) {
-      console.log("Game ended: No more available questions");
       setSeenQuestions([]);
       setShowEndModal(true);
     } else {
-      console.log(`Selected question index: ${nextIndex}`);
-      // מוסיפים את האינדקס החדש למערך השאלות שנראו
       setSeenQuestions(prev => [...prev, nextIndex]);
       setQuestionIndex(nextIndex);
       setSelected(null);
       setShowHint(false);
+      setShowAutoHint(false);
       setTime(30);
     }
   };
@@ -215,14 +178,11 @@ function Questions() {
     setLocked(true);
 
     if (idx === question.correct) {
-      // אם התשובה נכונה, מוסיפים את השאלה לרשימת השאלות שנענו נכון
-      // רק אם השאלה עוד לא קיימת ברשימה
       if (!correctIndexes.includes(questionIndex)) {
         const updated = [...correctIndexes, questionIndex];
         setCorrectIndexes(updated);
         saveProgressToDB(updated);
       }
-      
       setCorrectCount((c) => c + 1);
       setToast({ message: '✅ תשובה נכונה!', type: 'success' });
     } else {
@@ -231,19 +191,13 @@ function Questions() {
 
     setTimeout(() => {
       setToast(null);
-      
-      // Check if this is the last question BEFORE incrementing the counter
       const isLastQuestion = currentQuestionNumber >= MAX_QUESTIONS;
-      
-      // Increment question counter
       setCurrentQuestionNumber(prev => prev + 1);
-      
       if (isLastQuestion) {
         setShowEndModal(true);
       } else {
         loadNextQuestion();
       }
-      
       setLocked(false);
     }, 1500);
   };
@@ -258,14 +212,13 @@ function Questions() {
   };
 
   if (questionIndex === null && !showRestartModal) return <div className="p-4">טוען שאלה...</div>;
-  const question = questionsList[questionIndex] || { question: '', answers: [], hint: '' };
+  const question = questionsList[questionIndex] || { question: '', answers: [], hint: '', authohint: '' };
 
   return (
     <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen transition-colors duration-300">
       <div className={`relative z-10 ${showEndModal || showRestartModal ? 'pointer-events-none filter blur-sm' : ''}`}>
         <div className="max-w-4xl mx-auto flex flex-col p-4 space-y-4">
 
-          {/* Header */}
           <header className="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
             <button onClick={() => navigate('/')} className="text-xl font-semibold hover:underline">← חזרה לעמוד ראשי</button>
             <div className="flex items-center mx-3 gap-2">
@@ -279,7 +232,6 @@ function Questions() {
             </div>
           </header>
 
-          {/* Question Section */}
           <main className="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg flex-grow">
             <h2 className="text-2xl font-bold mb-4 text-right">{question.question}</h2>
 
@@ -291,9 +243,8 @@ function Questions() {
                 if (selected !== null) {
                   if (isSelected && isCorrect) bg = "bg-green-400";
                   else if (isSelected && !isCorrect) bg = "bg-red-400";
-                  else if (isCorrect) bg = "bg-green-400"; // מציג את התשובה הנכונה
+                  else if (isCorrect) bg = "bg-green-400";
                 }
-
                 return (
                   <button
                     key={idx}
@@ -307,7 +258,6 @@ function Questions() {
               })}
             </ul>
 
-            {/* Hint + Falafel Row */}
             <div className="mt-6 flex items-center justify-between">
               <button
                 className="px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500"
@@ -322,10 +272,15 @@ function Questions() {
               </div>
             </div>
 
-            {/* Hint Text */}
             {showHint && (
               <div className="mt-2 p-3 bg-yellow-100 dark:bg-yellow-900 rounded text-right">
                 💡 {question.hint}
+              </div>
+            )}
+
+            {showAutoHint && question.authohint && (
+              <div className="mt-2 p-3 bg-blue-100 dark:bg-blue-900 rounded text-right animate-pulse">
+                🤖 {question.authohint}
               </div>
             )}
           </main>
@@ -336,14 +291,12 @@ function Questions() {
         </div>
       </div>
 
-      {/* Toast */}
       {toast && (
         <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg text-white shadow-xl text-lg transition-opacity duration-300 z-50 ${toast.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
           {toast.message}
         </div>
       )}
 
-      {/* End Game Modal */}
       {showEndModal && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-md">
@@ -360,7 +313,6 @@ function Questions() {
         </div>
       )}
 
-      {/* Restart Modal - מודל חדש לאיפוס השאלות */}
       {showRestartModal && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-md">
