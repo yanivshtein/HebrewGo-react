@@ -11,7 +11,7 @@
         ],
         "correct": 2,
         "hint": "It's a basic item in a house. You use it to enter or exit a room.",
-        "authohint": "You open it for guests"
+        "authohint": "It’s an object you open to enter or exit a room."
       },
       {
         "question": "?'חתול' What is the correct translation of the Hebrew word",
@@ -23,7 +23,7 @@
         ],
         "correct": 2,
         "hint": "It's a common household pet, often likes to nap and purr.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "authohint": "It’s an animal that meows."
       },
       {
         "question": "?'כלב' What is the correct translation of the Hebrew word",
@@ -35,7 +35,7 @@
         ],
         "correct": 1,
         "hint": "It's a popular pet known as man's best friend.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "It’s an animal that barks."
       },
       {
         "question": "?'בית' What is the correct translation of the Hebrew word",
@@ -47,7 +47,7 @@
         ],
         "correct": 2,
         "hint": "It's where most people live.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It’s a place where people live."
       },
       {
         "question": "?'מים' What is the correct translation of the Hebrew word",
@@ -59,7 +59,7 @@
         ],
         "correct": 1,
         "hint": "You drink it when you're thirsty.",
-        "authohint": "You might have seen this in your daily life."
+        "authohint": "It’s a liquid you drink when you’re thirsty."
       },
       {
         "question": "?'ספר' What is the correct translation of the Hebrew word",
@@ -71,7 +71,7 @@
         ],
         "correct": 1,
         "hint": "You read it. It has pages and often a cover.",
-        "authohint": "Focus on the key term."
+        "authohint": "It’s something you read."
       },
       {
         "question": "?'אוכל' What is the correct translation of the Hebrew word",
@@ -83,7 +83,7 @@
         ],
         "correct": 2,
         "hint": "It's something you do when you're hungry.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It’s something you eat when you’re hungry."
       },
       {
         "question": "?'לשתות' What is the correct translation of the Hebrew word",
@@ -95,7 +95,7 @@
         ],
         "correct": 0,
         "hint": "You do this with water or juice.",
-        "authohint": "You might have seen this in your daily life."
+        "authohint": "It’s something you do when you’re drinking."
       },
       {
         "question": "?'חבר' What is the correct translation of the Hebrew word",
@@ -107,7 +107,7 @@
         ],
         "correct": 2,
         "hint": "Someone you like and spend time with.",
-        "authohint": "You might have seen this in your daily life."
+        "authohint": "It’s someone you like and spend time with."
       },
       {
         "question": "?'שמש' What is the correct translation of the Hebrew word",
@@ -119,7 +119,7 @@
         ],
         "correct": 2,
         "hint": "It shines in the sky during the day.",
-        "authohint": "Picture the word in your mind."
+        "authohint": "It’s the bright object in the sky during the day."
       },
       {
         "question": "?'עץ' What is the correct translation of the Hebrew word",
@@ -131,7 +131,7 @@
         ],
         "correct": 0,
         "hint": "It's a tall plant with a trunk and branches.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It’s a plant with a trunk and branches."
       },
       {
         "question": "?'מכונית' What is the correct translation of the Hebrew word",
@@ -143,7 +143,7 @@
         ],
         "correct": 1,
         "hint": "You drive it on the road.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It’s a vehicle that you drive."
       },
       {
         "question": "?'מים קרים' What is the correct translation of the Hebrew phrase",
@@ -155,7 +155,7 @@
         ],
         "correct": 1,
         "hint": "You drink it when it's hot outside.",
-        "authohint": "It's related to something familiar."
+        "authohint": "It’s water served cold."
       },
       {
         "question": "?'ילד' What is the correct translation of the Hebrew word",
@@ -167,7 +167,7 @@
         ],
         "correct": 1,
         "hint": "A young male child.",
-        "authohint": "Think carefully before answering."
+        "authohint": "It’s a young male child."
       },
       {
         "question": "?'ילדה' What is the correct translation of the Hebrew word",
@@ -179,7 +179,7 @@
         ],
         "correct": 2,
         "hint": "A young female child.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It’s a young female child."
       },
       {
         "question": "?'חלב' What is the correct translation of the Hebrew word",
@@ -191,7 +191,7 @@
         ],
         "correct": 0,
         "hint": "You pour it into your cereal.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "authohint": "It’s a white liquid from cows."
       },
       {
         "question": "?'ללכת' What is the correct translation of the Hebrew word",
@@ -203,7 +203,7 @@
         ],
         "correct": 2,
         "hint": "You do this with your feet to move forward.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "It’s something you do with your feet."
       },
       {
         "question": "?'שמיים' What is the correct translation of the Hebrew word",
@@ -215,7 +215,7 @@
         ],
         "correct": 0,
         "hint": "You see it when you look up during the day.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It’s what you see when you look up during the day."
       },
       {
         "question": "?'לישון' What is the correct translation of the Hebrew word",
@@ -227,7 +227,7 @@
         ],
         "correct": 1,
         "hint": "You do this at night to rest.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It’s something you do at night to rest."
       },
       {
         "question": "?'מִישְׁמַשׁ' What is the best translation of the Hebrew word",
@@ -239,7 +239,7 @@
         ],
         "correct": 2,
         "hint": "It describes a situation where many things are mixed together in a messy way.",
-        "authohint": "It's related to something familiar."
+        "authohint": "It describes a messy mix of things."
       }
     ],
     "medium": [
