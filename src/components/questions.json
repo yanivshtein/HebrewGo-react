@@ -245,140 +245,140 @@
     "medium": [
       {
         "question": "?'אני גר ב_____' Complete the sentence:",
-        "answers": ["תפוח (apple)", "ספר (book)", "בית (house)", "חתול (cat)"],
+        "answers": ["תפוח", "ספר", "בית", "חתול"],
         "correct": 2,
         "hint": "Think about where someone lives.",
         "authohint": "It's where you go after work or school to rest and sleep."
       },
       {
         "question": "?'אני אוהב לאכול _____' Complete the sentence:",
-        "answers": ["שולחן (table)", "תפוח (apple)", "כלב (dog)", "מכונית (car)"],
+        "answers": ["שולחן", "תפוח", "כלב", "מכונית"],
         "correct": 1,
         "hint": "Think of something you can eat.",
         "authohint": "It's a fruit that is red or green and often found in lunchboxes."
       },
       {
         "question": "?'אני שותה _____' Complete the sentence:",
-        "answers": ["לחם (bread)", "מים (water)", "מכונית (car)", "כיסא (chair)"],
+        "answers": ["לחם", "מים", "מכונית", "כיסא"],
         "correct": 1,
         "hint": "Think about what people drink.",
         "authohint": "It's a clear, tasteless liquid essential for life."
       },
       {
         "question": "?'אני קורא _____' Complete the sentence:",
-        "answers": ["ספר (book)", "שולחן (table)", "חלון (window)", "מזלג (fork)"],
+        "answers": ["ספר", "שולחן", "חלון", "מזלג"],
         "correct": 0,
         "hint": "Think about what you can read.",
         "authohint": "It has pages, words, and sometimes chapters."
       },
       {
         "question": "?'אני הולך ל_____' Complete the sentence:",
-        "answers": ["חתול (cat)", "בית (house)", "בית ספר (school)", "עץ (tree)"],
+        "answers": ["חתול", "בית", "בית ספר", "עץ"],
         "correct": 2,
         "hint": "Think about where children go to learn.",
         "authohint": "You carry a backpack when you go here as a child."
       },
       {
         "question": "?'אני רואה _____' Complete the sentence:",
-        "answers": ["טלוויזיה (television)", "ספר (book)", "אוטובוס (bus)", "אור (light)"],
+        "answers": ["טלוויזיה", "ספר", "אוטובוס", "אור"],
         "correct": 0,
         "hint": "Think of what you watch at home in the evening.",
         "authohint": "This is a screen in many living rooms for shows and movies."
       },
       {
         "question": "?'אני שומע _____' Complete the sentence:",
-        "answers": ["שיר (song)", "דלת (door)", "מכנסיים (pants)", "אבן (rock)"],
+        "answers": ["שיר", "דלת", "מכנסיים", "אבן"],
         "correct": 0,
         "hint": "You listen to it, often with music.",
         "authohint": "It often plays on the radio or your phone and has melody and lyrics."
       },
       {
         "question": "?'אני פותח את ה_____' Complete the sentence:",
-        "answers": ["כיסא (chair)", "דלת (door)", "חולצה (shirt)", "יד (hand)"],
+        "answers": ["כיסא", "דלת", "חולצה", "יד"],
         "correct": 1,
         "hint": "You open it to enter a room.",
         "authohint": "It usually has a handle or a knob and lets you go in or out."
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": ["חולצה (shirt)", "שולחן (table)", "מיטה (bed)", "בקבוק (bottle)"],
+        "answers": ["חולצה", "שולחן", "מיטה", "בקבוק"],
         "correct": 0,
         "hint": "You wear it on your upper body.",
         "authohint": "You put your arms through its sleeves and it covers your torso."
       },
       {
         "question": "?'אני משחק עם _____' Complete the sentence:",
-        "answers": ["ילד (boy)", "עץ (tree)", "כיסא (chair)", "חלון (window)"],
+        "answers": ["ילד", "עץ", "כיסא", "חלון"],
         "correct": 0,
         "hint": "Think of someone you can play with.",
         "authohint": "This is a person, often your age, who joins you in games."
       },
       {
         "question": "?'אני כותב עם _____' Complete the sentence:",
-        "answers": ["ספר (book)", "עט (pen)", "שולחן (table)", "כוס (cup)"],
+        "answers": ["ספר", "עט", "שולחן", "כוס"],
         "correct": 1,
         "hint": "A common tool for writing.",
         "authohint": "It uses ink and you hold it in your hand to write words."
       },
       {
         "question": "?'אני שוכב על ה_____' Complete the sentence:",
-        "answers": ["כיסא (chair)", "מיטה (bed)", "שולחן (table)", "חלון (window)"],
+        "answers": ["כיסא", "מיטה", "שולחן", "חלון"],
         "correct": 1,
         "hint": "You lie down here to sleep.",
         "authohint": "You cover yourself with a blanket while resting on this."
       },
       {
         "question": "?'אני אוכל עם _____' Complete the sentence:",
-        "answers": ["מזלג (fork)", "ספר (book)", "טלפון (phone)", "דלת (door)"],
+        "answers": ["מזלג", "ספר", "טלפון", "דלת"],
         "correct": 0,
         "hint": "You use this to eat food.",
         "authohint": "This utensil has prongs and is used to pick up pieces of food."
       },
       {
         "question": "?'אני שם את הספר על ה_____' Complete the sentence:",
-        "answers": ["חלון (window)", "שולחן (table)", "רצפה (floor)", "כיסא (chair)"],
+        "answers": ["חלון", "שולחן", "רצפה", "כיסא"],
         "correct": 1,
         "hint": "Common furniture where you place things.",
         "authohint": "This piece of furniture often holds plates, books, or laptops."
       },
       {
         "question": "?'אני מדבר עם ה_____' Complete the sentence:",
-        "answers": ["חבר (friend)", "ספר (book)", "דלת (door)", "כוס (cup)"],
+        "answers": ["חבר", "ספר", "דלת", "כוס"],
         "correct": 0,
         "hint": "Someone you talk to.",
         "authohint": "It's a person who listens to you and shares with you."
       },
       {
         "question": "?'אני שוטף את ה_____' Complete the sentence:",
-        "answers": ["ידיים (hands)", "כיסא (chair)", "מכנסיים (pants)", "עץ (tree)"],
+        "answers": ["ידיים", "כיסא", "מכנסיים", "עץ"],
         "correct": 0,
         "hint": "You do this before eating or after the bathroom.",
         "authohint": "Soap and water are usually involved when you clean these."
       },
       {
         "question": "?'אני שם מים בכ_____' Complete the sentence:",
-        "answers": ["כוס (cup)", "חלון (window)", "מיטה (bed)", "תמונה (picture)"],
+        "answers": ["כוס", "חלון", "מיטה", "תמונה"],
         "correct": 0,
         "hint": "You pour water into this to drink.",
         "authohint": "It's a small container you hold in your hand and drink from."
       },
       {
         "question": "?'אני רץ ל_____' Complete the sentence:",
-        "answers": ["בית ספר (school)", "שולחן (table)", "קיר (wall)", "ספר (book)"],
+        "answers": ["בית ספר", "שולחן", "קיר", "ספר"],
         "correct": 0,
         "hint": "Where kids go every morning.",
         "authohint": "A yellow bus often drops students off at this place."
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": ["נעליים (shoes)", "חלון (window)", "שולחן (table)", "ספר (book)"],
+        "answers": ["נעליים", "חלון", "שולחן", "ספר"],
         "correct": 0,
         "hint": "You wear them on your feet.",
         "authohint": "You tie their laces and walk outside with them on."
       },
       {
         "question": "?'אני מחפש את ה_____' Complete the sentence:",
-        "answers": ["מפתח (key)", "אור (light)", "כיסא (chair)", "קיר (wall)"],
+        "answers": ["מפתח", "אור", "כיסא", "קיר"],
         "correct": 0,
         "hint": "You need it to open the door.",
         "authohint": "It unlocks locks and is usually carried on a ring."
