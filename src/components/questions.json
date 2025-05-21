@@ -1,729 +1,529 @@
 {
   "us": {
     "easy": [
-      {
-        "question": "?'דלת' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Window",
-          "Chair",
-          "Door",
-          "Book"
-        ],
-        "correct": 2,
-        "hint": "It's a basic item in a house. You use it to enter or exit a room.",
-        "authohint": "It’s an object you open to enter or exit a room."
-      },
-      {
-        "question": "?'חתול' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Dog",
-          "Chair",
-          "Cat",
-          "House"
-        ],
-        "correct": 2,
-        "hint": "It's a common household pet, often likes to nap and purr.",
-        "authohint": "It’s an animal that meows."
-      },
-      {
-        "question": "?'כלב' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Cat",
-          "Dog",
-          "Fish",
-          "Bird"
-        ],
-        "correct": 1,
-        "hint": "It's a popular pet known as man's best friend.",
-        "authohint": "It’s an animal that barks."
-      },
-      {
-        "question": "?'בית' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Car",
-          "School",
-          "House",
-          "Store"
-        ],
-        "correct": 2,
-        "hint": "It's where most people live.",
-        "authohint": "It’s a place where people live."
-      },
-      {
-        "question": "?'מים' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Fire",
-          "Water",
-          "Air",
-          "Earth"
-        ],
-        "correct": 1,
-        "hint": "You drink it when you're thirsty.",
-        "authohint": "It’s a liquid you drink when you’re thirsty."
-      },
-      {
-        "question": "?'ספר' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Table",
-          "Book",
-          "Pen",
-          "Window"
-        ],
-        "correct": 1,
-        "hint": "You read it. It has pages and often a cover.",
-        "authohint": "It’s something you read."
-      },
-      {
-        "question": "?'אוכל' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Drink",
-          "Walk",
-          "Eat",
-          "Sleep"
-        ],
-        "correct": 2,
-        "hint": "It's something you do when you're hungry.",
-        "authohint": "It’s something you eat when you’re hungry."
-      },
-      {
-        "question": "?'לשתות' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Drink",
-          "Dance",
-          "Run",
-          "Eat"
-        ],
-        "correct": 0,
-        "hint": "You do this with water or juice.",
-        "authohint": "It’s something you do when you’re drinking."
-      },
-      {
-        "question": "?'חבר' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Enemy",
-          "Teacher",
-          "Friend",
-          "Parent"
-        ],
-        "correct": 2,
-        "hint": "Someone you like and spend time with.",
-        "authohint": "It’s someone you like and spend time with."
-      },
-      {
-        "question": "?'שמש' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Moon",
-          "Star",
-          "Sun",
-          "Cloud"
-        ],
-        "correct": 2,
-        "hint": "It shines in the sky during the day.",
-        "authohint": "It’s the bright object in the sky during the day."
-      },
-      {
-        "question": "?'עץ' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Tree",
-          "Flower",
-          "Bush",
-          "Grass"
-        ],
-        "correct": 0,
-        "hint": "It's a tall plant with a trunk and branches.",
-        "authohint": "It’s a plant with a trunk and branches."
-      },
-      {
-        "question": "?'מכונית' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Bicycle",
-          "Car",
-          "Bus",
-          "Train"
-        ],
-        "correct": 1,
-        "hint": "You drive it on the road.",
-        "authohint": "It’s a vehicle that you drive."
-      },
-      {
-        "question": "?'מים קרים' What is the correct translation of the Hebrew phrase",
-        "answers": [
-          "Hot water",
-          "Cold water",
-          "Milk",
-          "Juice"
-        ],
-        "correct": 1,
-        "hint": "You drink it when it's hot outside.",
-        "authohint": "It’s water served cold."
-      },
-      {
-        "question": "?'ילד' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Girl",
-          "Boy",
-          "Baby",
-          "Man"
-        ],
-        "correct": 1,
-        "hint": "A young male child.",
-        "authohint": "It’s a young male child."
-      },
-      {
-        "question": "?'ילדה' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Boy",
-          "Woman",
-          "Girl",
-          "Teacher"
-        ],
-        "correct": 2,
-        "hint": "A young female child.",
-        "authohint": "It’s a young female child."
-      },
-      {
-        "question": "?'חלב' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Milk",
-          "Juice",
-          "Soup",
-          "Cheese"
-        ],
-        "correct": 0,
-        "hint": "You pour it into your cereal.",
-        "authohint": "It’s a white liquid from cows."
-      },
-      {
-        "question": "?'ללכת' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Run",
-          "Go",
-          "Walk",
-          "Stay"
-        ],
-        "correct": 2,
-        "hint": "You do this with your feet to move forward.",
-        "authohint": "It’s something you do with your feet."
-      },
-      {
-        "question": "?'שמיים' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Sky",
-          "Sea",
-          "Sand",
-          "Cloud"
-        ],
-        "correct": 0,
-        "hint": "You see it when you look up during the day.",
-        "authohint": "It’s what you see when you look up during the day."
-      },
-      {
-        "question": "?'לישון' What is the correct translation of the Hebrew word",
-        "answers": [
-          "Eat",
-          "Sleep",
-          "Walk",
-          "Jump"
-        ],
-        "correct": 1,
-        "hint": "You do this at night to rest.",
-        "authohint": "It’s something you do at night to rest."
-      },
-      {
-        "question": "?'מִישְׁמַשׁ' What is the best translation of the Hebrew word",
-        "answers": [
-          "Blender",
-          "Tidy room",
-          "Mix / Mess",
-          "Fruit"
-        ],
-        "correct": 2,
-        "hint": "It describes a situation where many things are mixed together in a messy way.",
-        "authohint": "It describes a messy mix of things."
-      }
+  {
+    "question": "?'דלת' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Window",
+      "Chair",
+      "Door",
+      "Book"
+    ],
+    "correct": 2,
+    "hint": "It's a basic item in a house. You use it to enter or exit a room.",
+    "authohint": "You need to open and close this to go into or out of rooms."
+  },
+  {
+    "question": "?'חתול' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Dog",
+      "Chair",
+      "Cat",
+      "House"
+    ],
+    "correct": 2,
+    "hint": "It's a common household pet, often likes to nap and purr.",
+    "authohint": "This animal usually lands on its feet and is famous for chasing mice."
+  },
+  {
+    "question": "?'כלב' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Cat",
+      "Dog",
+      "Fish",
+      "Bird"
+    ],
+    "correct": 1,
+    "hint": "It's a popular pet known as man's best friend.",
+    "authohint": "This animal wags its tail and likes to play fetch."
+  },
+  {
+    "question": "?'בית' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Car",
+      "School",
+      "House",
+      "Store"
+    ],
+    "correct": 2,
+    "hint": "It's where most people live.",
+    "authohint": "You sleep and eat here—it's your home."
+  },
+  {
+    "question": "?'מים' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Fire",
+      "Water",
+      "Air",
+      "Earth"
+    ],
+    "correct": 1,
+    "hint": "You drink it when you're thirsty.",
+    "authohint": "This clear liquid comes from the tap and is essential for life."
+  },
+  {
+    "question": "?'ספר' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Table",
+      "Book",
+      "Pen",
+      "Window"
+    ],
+    "correct": 1,
+    "hint": "You read it. It has pages and often a cover.",
+    "authohint": "Stories and information are written in this object."
+  },
+  {
+    "question": "?'אוכל' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Drink",
+      "Walk",
+      "Eat",
+      "Sleep"
+    ],
+    "correct": 2,
+    "hint": "It's something you do when you're hungry.",
+    "authohint": "This is what you put in your mouth when you want a meal."
+  },
+  {
+    "question": "?'לשתות' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Drink",
+      "Dance",
+      "Run",
+      "Eat"
+    ],
+    "correct": 0,
+    "hint": "You do this with water or juice.",
+    "authohint": "You need to do this when you’re thirsty, usually with a glass or cup."
+  },
+  {
+    "question": "?'חבר' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Enemy",
+      "Teacher",
+      "Friend",
+      "Parent"
+    ],
+    "correct": 2,
+    "hint": "Someone you like and spend time with.",
+    "authohint": "This is a person you hang out with and trust."
+  },
+  {
+    "question": "?'שמש' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Moon",
+      "Star",
+      "Sun",
+      "Cloud"
+    ],
+    "correct": 2,
+    "hint": "It shines in the sky during the day.",
+    "authohint": "This gives us light and warmth every day."
+  },
+  {
+    "question": "?'עץ' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Tree",
+      "Flower",
+      "Bush",
+      "Grass"
+    ],
+    "correct": 0,
+    "hint": "It's a tall plant with a trunk and branches.",
+    "authohint": "You might climb this or see birds sitting in it."
+  },
+  {
+    "question": "?'מכונית' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Bicycle",
+      "Car",
+      "Bus",
+      "Train"
+    ],
+    "correct": 1,
+    "hint": "You drive it on the road.",
+    "authohint": "You need keys to start this vehicle."
+  },
+  {
+    "question": "?'מים קרים' What is the correct translation of the Hebrew phrase",
+    "answers": [
+      "Hot water",
+      "Cold water",
+      "Milk",
+      "Juice"
+    ],
+    "correct": 1,
+    "hint": "You drink it when it's hot outside.",
+    "authohint": "You might want ice in your glass with this drink."
+  },
+  {
+    "question": "?'ילד' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Girl",
+      "Boy",
+      "Baby",
+      "Man"
+    ],
+    "correct": 1,
+    "hint": "A young male child.",
+    "authohint": "A young guy, not yet a man."
+  },
+  {
+    "question": "?'ילדה' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Boy",
+      "Woman",
+      "Girl",
+      "Teacher"
+    ],
+    "correct": 2,
+    "hint": "A young female child.",
+    "authohint": "A young girl, not yet a woman."
+  },
+  {
+    "question": "?'חלב' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Milk",
+      "Juice",
+      "Soup",
+      "Cheese"
+    ],
+    "correct": 0,
+    "hint": "You pour it into your cereal.",
+    "authohint": "Kids often drink this with cookies."
+  },
+  {
+    "question": "?'ללכת' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Run",
+      "Go",
+      "Walk",
+      "Stay"
+    ],
+    "correct": 2,
+    "hint": "You do this with your feet to move forward.",
+    "authohint": "You do this when you’re moving on foot but not running."
+  },
+  {
+    "question": "?'שמיים' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Sky",
+      "Sea",
+      "Sand",
+      "Cloud"
+    ],
+    "correct": 0,
+    "hint": "You see it when you look up during the day.",
+    "authohint": "Birds and planes travel through this."
+  },
+  {
+    "question": "?'לישון' What is the correct translation of the Hebrew word",
+    "answers": [
+      "Eat",
+      "Sleep",
+      "Walk",
+      "Jump"
+    ],
+    "correct": 1,
+    "hint": "You do this at night to rest.",
+    "authohint": "You close your eyes and rest this way, usually in bed."
+  },
+  {
+    "question": "?'מִישְׁמַשׁ' What is the best translation of the Hebrew word",
+    "answers": [
+      "Blender",
+      "Tidy room",
+      "Mix / Mess",
+      "Fruit"
+    ],
+    "correct": 2,
+    "hint": "It describes a situation where many things are mixed together in a messy way.",
+    "authohint": "This word means things are jumbled up and not in order."
+  }
     ],
     "medium": [
       {
         "question": "?'אני גר ב_____' Complete the sentence:",
-        "answers": [
-          "תפוח (apple)",
-          "ספר (book)",
-          "בית (house)",
-          "חתול (cat)"
-        ],
+        "answers": ["תפוח (apple)", "ספר (book)", "בית (house)", "חתול (cat)"],
         "correct": 2,
         "hint": "Think about where someone lives.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's where you go after work or school to rest and sleep."
       },
       {
         "question": "?'אני אוהב לאכול _____' Complete the sentence:",
-        "answers": [
-          "שולחן (table)",
-          "תפוח (apple)",
-          "כלב (dog)",
-          "מכונית (car)"
-        ],
+        "answers": ["שולחן (table)", "תפוח (apple)", "כלב (dog)", "מכונית (car)"],
         "correct": 1,
         "hint": "Think of something you can eat.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "It's a fruit that is red or green and often found in lunchboxes."
       },
       {
         "question": "?'אני שותה _____' Complete the sentence:",
-        "answers": [
-          "לחם (bread)",
-          "מים (water)",
-          "מכונית (car)",
-          "כיסא (chair)"
-        ],
+        "answers": ["לחם (bread)", "מים (water)", "מכונית (car)", "כיסא (chair)"],
         "correct": 1,
         "hint": "Think about what people drink.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's a clear, tasteless liquid essential for life."
       },
       {
         "question": "?'אני קורא _____' Complete the sentence:",
-        "answers": [
-          "ספר (book)",
-          "שולחן (table)",
-          "חלון (window)",
-          "מזלג (fork)"
-        ],
+        "answers": ["ספר (book)", "שולחן (table)", "חלון (window)", "מזלג (fork)"],
         "correct": 0,
         "hint": "Think about what you can read.",
-        "authohint": "It's related to something familiar."
+        "authohint": "It has pages, words, and sometimes chapters."
       },
       {
         "question": "?'אני הולך ל_____' Complete the sentence:",
-        "answers": [
-          "חתול (cat)",
-          "בית (house)",
-          "בית ספר (school)",
-          "עץ (tree)"
-        ],
+        "answers": ["חתול (cat)", "בית (house)", "בית ספר (school)", "עץ (tree)"],
         "correct": 2,
         "hint": "Think about where children go to learn.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "authohint": "You carry a backpack when you go here as a child."
       },
       {
         "question": "?'אני רואה _____' Complete the sentence:",
-        "answers": [
-          "טלוויזיה (television)",
-          "ספר (book)",
-          "אוטובוס (bus)",
-          "אור (light)"
-        ],
+        "answers": ["טלוויזיה (television)", "ספר (book)", "אוטובוס (bus)", "אור (light)"],
         "correct": 0,
         "hint": "Think of what you watch at home in the evening.",
-        "authohint": "Focus on the key term."
+        "authohint": "This is a screen in many living rooms for shows and movies."
       },
       {
         "question": "?'אני שומע _____' Complete the sentence:",
-        "answers": [
-          "שיר (song)",
-          "דלת (door)",
-          "מכנסיים (pants)",
-          "אבן (rock)"
-        ],
+        "answers": ["שיר (song)", "דלת (door)", "מכנסיים (pants)", "אבן (rock)"],
         "correct": 0,
         "hint": "You listen to it, often with music.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It often plays on the radio or your phone and has melody and lyrics."
       },
       {
         "question": "?'אני פותח את ה_____' Complete the sentence:",
-        "answers": [
-          "כיסא (chair)",
-          "דלת (door)",
-          "חולצה (shirt)",
-          "יד (hand)"
-        ],
+        "answers": ["כיסא (chair)", "דלת (door)", "חולצה (shirt)", "יד (hand)"],
         "correct": 1,
         "hint": "You open it to enter a room.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It usually has a handle or a knob and lets you go in or out."
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": [
-          "חולצה (shirt)",
-          "שולחן (table)",
-          "מיטה (bed)",
-          "בקבוק (bottle)"
-        ],
+        "answers": ["חולצה (shirt)", "שולחן (table)", "מיטה (bed)", "בקבוק (bottle)"],
         "correct": 0,
         "hint": "You wear it on your upper body.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "You put your arms through its sleeves and it covers your torso."
       },
       {
         "question": "?'אני משחק עם _____' Complete the sentence:",
-        "answers": [
-          "ילד (boy)",
-          "עץ (tree)",
-          "כיסא (chair)",
-          "חלון (window)"
-        ],
+        "answers": ["ילד (boy)", "עץ (tree)", "כיסא (chair)", "חלון (window)"],
         "correct": 0,
         "hint": "Think of someone you can play with.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "This is a person, often your age, who joins you in games."
       },
       {
         "question": "?'אני כותב עם _____' Complete the sentence:",
-        "answers": [
-          "ספר (book)",
-          "עט (pen)",
-          "שולחן (table)",
-          "כוס (cup)"
-        ],
+        "answers": ["ספר (book)", "עט (pen)", "שולחן (table)", "כוס (cup)"],
         "correct": 1,
         "hint": "A common tool for writing.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It uses ink and you hold it in your hand to write words."
       },
       {
         "question": "?'אני שוכב על ה_____' Complete the sentence:",
-        "answers": [
-          "כיסא (chair)",
-          "מיטה (bed)",
-          "שולחן (table)",
-          "חלון (window)"
-        ],
+        "answers": ["כיסא (chair)", "מיטה (bed)", "שולחן (table)", "חלון (window)"],
         "correct": 1,
         "hint": "You lie down here to sleep.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "You cover yourself with a blanket while resting on this."
       },
       {
         "question": "?'אני אוכל עם _____' Complete the sentence:",
-        "answers": [
-          "מזלג (fork)",
-          "ספר (book)",
-          "טלפון (phone)",
-          "דלת (door)"
-        ],
+        "answers": ["מזלג (fork)", "ספר (book)", "טלפון (phone)", "דלת (door)"],
         "correct": 0,
         "hint": "You use this to eat food.",
-        "authohint": "Focus on the key term."
+        "authohint": "This utensil has prongs and is used to pick up pieces of food."
       },
       {
         "question": "?'אני שם את הספר על ה_____' Complete the sentence:",
-        "answers": [
-          "חלון (window)",
-          "שולחן (table)",
-          "רצפה (floor)",
-          "כיסא (chair)"
-        ],
+        "answers": ["חלון (window)", "שולחן (table)", "רצפה (floor)", "כיסא (chair)"],
         "correct": 1,
         "hint": "Common furniture where you place things.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "This piece of furniture often holds plates, books, or laptops."
       },
       {
         "question": "?'אני מדבר עם ה_____' Complete the sentence:",
-        "answers": [
-          "חבר (friend)",
-          "ספר (book)",
-          "דלת (door)",
-          "כוס (cup)"
-        ],
+        "answers": ["חבר (friend)", "ספר (book)", "דלת (door)", "כוס (cup)"],
         "correct": 0,
         "hint": "Someone you talk to.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It's a person who listens to you and shares with you."
       },
       {
         "question": "?'אני שוטף את ה_____' Complete the sentence:",
-        "answers": [
-          "ידיים (hands)",
-          "כיסא (chair)",
-          "מכנסיים (pants)",
-          "עץ (tree)"
-        ],
+        "answers": ["ידיים (hands)", "כיסא (chair)", "מכנסיים (pants)", "עץ (tree)"],
         "correct": 0,
         "hint": "You do this before eating or after the bathroom.",
-        "authohint": "It's related to something familiar."
+        "authohint": "Soap and water are usually involved when you clean these."
       },
       {
         "question": "?'אני שם מים בכ_____' Complete the sentence:",
-        "answers": [
-          "כוס (cup)",
-          "חלון (window)",
-          "מיטה (bed)",
-          "תמונה (picture)"
-        ],
+        "answers": ["כוס (cup)", "חלון (window)", "מיטה (bed)", "תמונה (picture)"],
         "correct": 0,
         "hint": "You pour water into this to drink.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It's a small container you hold in your hand and drink from."
       },
       {
         "question": "?'אני רץ ל_____' Complete the sentence:",
-        "answers": [
-          "בית ספר (school)",
-          "שולחן (table)",
-          "קיר (wall)",
-          "ספר (book)"
-        ],
+        "answers": ["בית ספר (school)", "שולחן (table)", "קיר (wall)", "ספר (book)"],
         "correct": 0,
         "hint": "Where kids go every morning.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "A yellow bus often drops students off at this place."
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": [
-          "נעליים (shoes)",
-          "חלון (window)",
-          "שולחן (table)",
-          "ספר (book)"
-        ],
+        "answers": ["נעליים (shoes)", "חלון (window)", "שולחן (table)", "ספר (book)"],
         "correct": 0,
         "hint": "You wear them on your feet.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "You tie their laces and walk outside with them on."
       },
       {
         "question": "?'אני מחפש את ה_____' Complete the sentence:",
-        "answers": [
-          "מפתח (key)",
-          "אור (light)",
-          "כיסא (chair)",
-          "קיר (wall)"
-        ],
+        "answers": ["מפתח (key)", "אור (light)", "כיסא (chair)", "קיר (wall)"],
         "correct": 0,
         "hint": "You need it to open the door.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "authohint": "It unlocks locks and is usually carried on a ring."
       }
     ],
     "hard": [
       {
         "question": "?'הִתְפַּקּוּת'  Translate this Hebrew word to English:",
-        "answers": [
-          "Retention",
-          "Self-control",
-          "Eruption",
-          "Regression"
-        ],
+        "answers": ["Retention", "Self-control", "Eruption", "Regression"],
         "correct": 1,
         "hint": "The ability to restrain yourself from acting or speaking.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's the word for stopping yourself from doing something you want to do."
       },
       {
         "question": "?'אֲרִיכָה'  Translate this Hebrew word to English:",
-        "answers": [
-          "Lengthening",
-          "Indictment",
-          "Edition",
-          "Cooperation"
-        ],
+        "answers": ["Lengthening", "Indictment", "Edition", "Cooperation"],
         "correct": 2,
         "hint": "A published version of a text, film, or music track.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It's a word used for the specific version of a book or newspaper."
       },
       {
         "question": "?'תְּחִינָה'  Translate this Hebrew word to English:",
-        "answers": [
-          "Plea / Supplication",
-          "Grinding",
-          "Flirtation",
-          "Excavation"
-        ],
+        "answers": ["Plea / Supplication", "Grinding", "Flirtation", "Excavation"],
         "correct": 0,
         "hint": "A heartfelt request, often to a higher power.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It's what you do when you beg for mercy or help."
       },
       {
         "question": "?'עֵרֶךְ מוֹסָף'  Translate this Hebrew term to English:",
-        "answers": [
-          "Added sugar",
-          "Marginal value",
-          "Supplementary angle",
-          "Additional chapter"
-        ],
+        "answers": ["Added sugar", "Marginal value", "Supplementary angle", "Additional chapter"],
         "correct": 1,
         "hint": "An economics/finance term for an extra benefit created.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's the extra worth or profit generated by an activity."
       },
       {
         "question": "?'מְנוּדֶה'  Translate this Hebrew word to English:",
-        "answers": [
-          "Exiled",
-          "Beloved",
-          "Innovative",
-          "Condensed"
-        ],
+        "answers": ["Exiled", "Beloved", "Innovative", "Condensed"],
         "correct": 0,
         "hint": "Someone forced to live outside their community or country.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's what you call someone sent away from society."
       },
       {
         "question": "?'הוא שבר את הקרח בשיחה'  Translate this Hebrew phrase to English:",
-        "answers": [
-          "He ruined the conversation",
-          "He broke the ice in the conversation",
-          "He froze during the talk",
-          "He heated up the argument"
-        ],
+        "answers": ["He ruined the conversation", "He broke the ice in the conversation", "He froze during the talk", "He heated up the argument"],
         "correct": 1,
         "hint": "An idiom meaning he made the atmosphere more relaxed.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "This is a phrase used when someone makes others comfortable to start talking."
       },
       {
         "question": "?'הם הגיעו מים עד נפש'  Translate this Hebrew idiom to English:",
-        "answers": [
-          "They’re up to their necks in trouble",
-          "They’re thirsty for life",
-          "They reached calm waters",
-          "They’re sailing smoothly"
-        ],
+        "answers": ["They’re up to their necks in trouble", "They’re thirsty for life", "They reached calm waters", "They’re sailing smoothly"],
         "correct": 0,
         "hint": "Literally “waters reached the soul” – they can’t take it anymore.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "This is said when someone can't handle more stress or problems."
       },
       {
         "question": "?'ככלב השב אל קיאו'  Translate this biblical-style phrase:",
-        "answers": [
-          "Like a dog returning to its vomit",
-          "Like a lion guarding its cubs",
-          "Like a bird fleeing the net",
-          "Like a fish seeking water"
-        ],
+        "answers": ["Like a dog returning to its vomit", "Like a lion guarding its cubs", "Like a bird fleeing the net", "Like a fish seeking water"],
         "correct": 0,
         "hint": "Used to describe someone repeating a bad mistake.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It's about someone repeating the same mistake despite knowing better."
       },
       {
         "question": "?'סגרתי מעגל'  Translate this colloquial Hebrew phrase:",
-        "answers": [
-          "I completed the circle / found closure",
-          "I missed the mark",
-          "I shut the gate",
-          "I solved the puzzle"
-        ],
+        "answers": ["I completed the circle / found closure", "I missed the mark", "I shut the gate", "I solved the puzzle"],
         "correct": 0,
         "hint": "Means finally finishing something unresolved.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It's about resolving unfinished business or achieving closure."
       },
       {
         "question": "?'אי אפשר לאחוז את החבל משני קצותיו'  Translate this proverb:",
-        "answers": [
-          "You can’t hold the rope at both ends",
-          "You can’t see the wood for the trees",
-          "Don’t count your chickens",
-          "The early bird catches the worm"
-        ],
+        "answers": ["You can’t hold the rope at both ends", "You can’t see the wood for the trees", "Don’t count your chickens", "The early bird catches the worm"],
         "correct": 0,
         "hint": "Equivalent to 'You can’t have it both ways'.",
-        "authohint": "You might have seen this in your daily life."
+        "authohint": "It's a phrase for situations where you have to choose—you can't have both options."
       },
       {
         "question": "?'חִנָּה'  Translate this Hebrew word to English:",
-        "answers": [
-          "Grace / Charm",
-          "Parking fine",
-          "Pity",
-          "Jealousy"
-        ],
+        "answers": ["Grace / Charm", "Parking fine", "Pity", "Jealousy"],
         "correct": 0,
         "hint": "Also the name of a traditional North-African Jewish ceremony.",
-        "authohint": "You might have seen this in your daily life."
+        "authohint": "It's a quality that makes someone attractive or pleasant."
       },
       {
         "question": "?'תַּעֲלוּל'  Translate this Hebrew word to English:",
-        "answers": [
-          "Prank",
-          "Achievement",
-          "Revival",
-          "Collapse"
-        ],
+        "answers": ["Prank", "Achievement", "Revival", "Collapse"],
         "correct": 0,
         "hint": "A mischievous trick, often by children.",
-        "authohint": "Focus on the key term."
+        "authohint": "It's a playful trick, often meant to make people laugh."
       },
       {
         "question": "?'הִתגַלּוּת'  Translate this Hebrew word to English:",
-        "answers": [
-          "Discovery / Revelation",
-          "Migration",
-          "Conspiracy",
-          "Decoration"
-        ],
+        "answers": ["Discovery / Revelation", "Migration", "Conspiracy", "Decoration"],
         "correct": 0,
         "hint": "When something hidden becomes known.",
-        "authohint": "Try to recall what you've learned."
+        "authohint": "It's what happens when a secret is finally revealed."
       },
       {
         "question": "?'מַסְלוּל'  Translate this Hebrew word to English:",
-        "answers": [
-          "Traction",
-          "Track / Route",
-          "Wound",
-          "Gesture"
-        ],
+        "answers": ["Traction", "Track / Route", "Wound", "Gesture"],
         "correct": 1,
         "hint": "What hikers or university students might follow.",
-        "authohint": "Think about the context of the word."
+        "authohint": "It's a path or course that guides you from one place to another."
       },
       {
         "question": "?'צִפְיוֹן'  Translate this Hebrew zoology word:",
-        "answers": [
-          "Chameleon",
-          "Gazelle",
-          "Sea horse",
-          "Sand viper"
-        ],
+        "answers": ["Chameleon", "Gazelle", "Sea horse", "Sand viper"],
         "correct": 2,
         "hint": "A delicate marine creature that looks like a tiny horse.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "It's a small sea animal with a curled tail and horse-like head."
       },
       {
         "question": "?'אל תסתכל בקנקן אלא במה שיש בו'  Translate this saying:",
-        "answers": [
-          "Don't judge a book by its cover",
-          "Better late than never",
-          "Actions speak louder than words",
-          "The pot calls the kettle black"
-        ],
+        "answers": ["Don't judge a book by its cover", "Better late than never", "Actions speak louder than words", "The pot calls the kettle black"],
         "correct": 0,
         "hint": "Literally 'Don’t look at the jug but at what’s inside'.",
-        "authohint": "This is a commonly known concept."
+        "authohint": "This means you should value substance over appearance."
       },
       {
         "question": "?'הוא ירד מהפסים'  Translate this expression:",
-        "answers": [
-          "He went off the rails / lost his mind",
-          "He missed the train",
-          "He fixed the tracks",
-          "He slowed down"
-        ],
+        "answers": ["He went off the rails / lost his mind", "He missed the train", "He fixed the tracks", "He slowed down"],
         "correct": 0,
         "hint": "Means someone acting irrationally.",
-        "authohint": "Imagine a real-life example."
+        "authohint": "It's used for someone who is behaving in a crazy or abnormal way."
       },
       {
         "question": "?'היא קפצה לביקור חטוף'  Translate this Hebrew phrase:",
-        "answers": [
-          "She jumped on a long journey",
-          "She dropped by for a quick visit",
-          "She skipped the meeting entirely",
-          "She flew abroad suddenly"
-        ],
+        "answers": ["She jumped on a long journey", "She dropped by for a quick visit", "She skipped the meeting entirely", "She flew abroad suddenly"],
         "correct": 1,
         "hint": "A very quick social call.",
-        "authohint": "Think about the context of the word."
+        "authohint": "This means someone visited for only a very short time."
       },
       {
         "question": "?'נַעֲצָה'  Translate this Hebrew verb (passive form) to English:",
-        "answers": [
-          "Was advised",
-          "Was inserted",
-          "Was injured",
-          "Was painted"
-        ],
+        "answers": ["Was advised", "Was inserted", "Was injured", "Was painted"],
         "correct": 1,
         "hint": "Root נ-ע-ץ, as 'to stick/insert a pin'.",
-        "authohint": "Think carefully before answering."
+        "authohint": "It's the passive form of the action you do when putting a pin into a board."
       },
       {
         "question": "?'הִקָּרוּת'  Translate this Hebrew noun to English:",
-        "answers": [
-          "Coincidence / Chance encounter",
-          "Prediction",
-          "Instruction",
-          "Harvest"
-        ],
+        "answers": ["Coincidence / Chance encounter", "Prediction", "Instruction", "Harvest"],
         "correct": 0,
         "hint": "From the root ק-ר-ה (to happen).",
-        "authohint": "Focus on the key term."
+        "authohint": "It's a word for a meeting that happens purely by chance."
       }
     ]
   },
