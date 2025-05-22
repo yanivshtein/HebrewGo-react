@@ -35,8 +35,8 @@ function PlacementTest() {
   const finishTest = async () => {
     setCompleted(true);
     let difficulty = 'easy';
-    if (score >= 15) difficulty = 'hard';
-    else if (score >= 8) difficulty = 'medium';
+    if (score == 5) difficulty = 'hard';
+    else if (score >= 3) difficulty = 'medium';
 
     localStorage.setItem('userDifficulty', difficulty);
 
