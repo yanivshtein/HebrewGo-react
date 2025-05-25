@@ -27,20 +27,18 @@ function Home() {
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('wheel', handleWheel, { passive: false });
 
-    // Set the page scale to 90%
-    document.body.style.zoom = '90%';
-    document.body.style.transform = 'scale(0.9)';
+    // Lock the page scale to 100% (normal size)
+    document.body.style.zoom = '100%';
+    document.body.style.transform = 'scale(1.0)';
     document.body.style.transformOrigin = 'top left';
-    document.body.style.width = '111.11%'; // Compensate for the 90% scale
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('wheel', handleWheel);
-      // Reset zoom when component unmounts
+      // Reset to normal scale when component unmounts
       document.body.style.zoom = '';
       document.body.style.transform = '';
       document.body.style.transformOrigin = '';
-      document.body.style.width = '';
     };
   }, []);
 
