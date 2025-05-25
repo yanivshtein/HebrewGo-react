@@ -266,10 +266,6 @@ function Questions() {
               >
                 הצג רמז
               </button>
-              <div className="text-lg text-gray-700 dark:text-gray-200 flex items-center gap-1">
-                <span>{correctCount}</span>
-                <span className="text-xl"> X 🧆 </span>
-              </div>
             </div>
 
             {showHint && (
