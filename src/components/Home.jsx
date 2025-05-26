@@ -5,9 +5,20 @@ import logo from '../logo.png';
 function Home() {
   const navigate = useNavigate();
   const [showToast, setShowToast] = useState(false);
+  const [gender, setGender] = useState('other');
   const userName = localStorage.getItem('userName');
-  const userGender = localStorage.getItem('userGender'); 
-  const welcomeMessage = userGender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא';
+
+useEffect(() => {
+  if (userName) {
+    fetch(`http://localhost:5000/api/user/${userName}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.gender) setGender(data.gender);
+      });
+  }
+}, [userName]);
+
+
 
 
   useEffect(() => {
@@ -37,19 +48,17 @@ function Home() {
           alt="Hebrew Go Logo"
           className="h-60 sm:h-64 md:h-72 bg-white p-4 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105"
 />
-
     <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
       {userName ? (
     <>
-      {welcomeMessage} <span className=" dark:text-blue-400">{userName} 🎓</span>
+      {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'} <span className="dark:text-blue-400">{userName} 🎓</span>
     </>
   ) : (
     <>
-      ברוך הבא ל־<span className="text-blue-700 dark:text-blue-400">Hebrew Go 🎓</span>
+      {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'} ל־<span className="text-blue-700 dark:text-blue-400">Hebrew Go 🎓</span>
     </>
   )}
-    </p>
-
+</p>
 
         {/* כפתורים */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
