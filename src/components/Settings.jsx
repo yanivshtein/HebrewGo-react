@@ -3,10 +3,9 @@ import { useNavigate } from 'react-router-dom';
 
 function Settings() {
   const navigate = useNavigate();
-  const [lang, setLang] = useState('us');           // Language state
-  const [difficulty, setDifficulty] = useState('easy'); // Difficulty state
+  const [lang, setLang] = useState('us');
+  const [difficulty, setDifficulty] = useState('easy');
 
-  // Load saved settings from localStorage on component mount
   useEffect(() => {
     const savedLang = localStorage.getItem('userLang') || 'us';
     const savedDifficulty = localStorage.getItem('userDifficulty') || 'easy';
@@ -14,80 +13,80 @@ function Settings() {
     setDifficulty(savedDifficulty);
   }, []);
 
-  // Save settings to localStorage and navigate back to home
   const saveSettings = () => {
     localStorage.setItem('userLang', lang);
     localStorage.setItem('userDifficulty', difficulty);
-    alert('✅ Settings saved successfully!');
+    alert('✅ ההגדרות נשמרו בהצלחה!');
     navigate('/');
   };
 
-  // Clear all saved data from localStorage
   const clearStorage = () => {
     localStorage.clear();
-    alert("🧹 All data has been cleared!");
+    alert('🧹 כל הנתונים נמחקו!');
     navigate('/');
   };
 
   return (
-    <div dir="rtl" className="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen p-4 transition-colors duration-300">
-      <div className="max-w-2xl mx-auto flex flex-col space-y-6">
-        
-        {/* Header with back button */}
-        <header className="flex justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
-          <button onClick={() => navigate('/')} className="text-xl font-semibold hover:underline">
-            ← Back to Home
-          </button>
-        </header>
+    <div className="min-h-screen w-full bg-blue-100 dark:bg-gray-900 text-black dark:text-white transition-colors duration-300 flex items-center justify-center">
+      <div dir="rtl" className="w-full max-w-2xl px-6 py-10 flex flex-col space-y-6 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl">
 
-        {/* Main settings form */}
-        <main className="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg">
-          <h1 className="text-2xl font-bold text-center mb-6">Settings</h1>
+        {/* כותרת */}
+        <h1 className="text-3xl sm:text-4xl font-bold text-center text-blue-700 dark:text-blue-400">
+           הגדרות משתמש ⚙️
+        </h1>
 
-          {/* Language selector */}
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Select Language</label>
-            <select
-              value={lang}
-              onChange={(e) => setLang(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700"
-            >
-              <option value="us">English</option>
-              <option value="es">Español</option>
-              <option value="ru">Русский</option>
-            </select>
-          </div>
-
-          {/* Difficulty selector */}
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Select Difficulty</label>
-            <select
-              value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700"
-            >
-              <option value="easy">Easy</option>
-              <option value="medium">Medium</option>
-              <option value="hard">Hard</option>
-            </select>
-          </div>
-
-          {/* Save button */}
-          <button
-            onClick={saveSettings}
-            className="w-full mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      {/* בחירת שפה */}
+      <div>
+        <label className="block mb-2 text-lg font-medium">בחר שפה</label>
+        <select
+        value={lang}
+        onChange={(e) => setLang(e.target.value)}
+        className="w-full p-3 rounded-lg bg-white dark:bg-gray-700 text-black dark:text-white shadow"
           >
-            Save Settings
-          </button>
+        <option value="us">English</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+        </select>
+      </div>
 
-          {/* Clear all data button */}
-          <button
-            onClick={clearStorage}
-            className="w-full mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+
+        {/* בחירת רמת קושי */}
+        <div>
+          <label className="block mb-2 text-lg font-medium">בחר רמת קושי</label>
+          <select
+            value={difficulty}
+            onChange={(e) => setDifficulty(e.target.value)}
+            className="w-full p-3 rounded-lg bg-white dark:bg-gray-700 text-black dark:text-white shadow"
           >
-            Clear Data & Reset
-          </button>
-        </main>
+            <option value="easy">קל</option>
+            <option value="medium">בינוני</option>
+            <option value="hard">קשה</option>
+          </select>
+        </div>
+
+        {/* כפתור שמירה */}
+        <button
+          onClick={saveSettings}
+          className="w-full h-14 bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-md transition-all"
+        >
+          שמור הגדרות 💾
+        </button>
+
+        {/* כפתור ניקוי נתונים */}
+        <button
+          onClick={clearStorage}
+          className="w-full h-14 bg-red-500 hover:bg-red-600 text-white text-lg font-semibold rounded-xl shadow-md transition-all"
+        >
+           איפוס ומחיקת נתונים 🧹
+        </button>
+
+        {/* חזור לדף הבית */}
+        <button
+          onClick={() => navigate('/')}
+          className="w-full h-12 bg-gray-300 hover:bg-gray-400 dark:bg-gray-600 dark:hover:bg-gray-700 text-black dark:text-white rounded-lg shadow transition"
+        >
+            חזרה לדף הבית⬅️
+        </button>
       </div>
     </div>
   );

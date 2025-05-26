@@ -17,6 +17,7 @@ function Progress() {
   const [gender, setGender] = useState('other');
   const [trueLevel, setTrueLevel] = useState('easy'); // Real difficulty level
   const navigate = useNavigate();
+  
 
   const userName = localStorage.getItem('userName');
 
@@ -64,8 +65,7 @@ function Progress() {
   const getPercent = (val) => `${(val / MAX_QUESTIONS) * 100}%`;
 
   return (
-    <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white p-6" dir="rtl">
-      
+<div className="min-h-screen bg-blue-100 text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 p-6" dir="rtl">
       {/* Level Image with real level text */}
       <div className="flex flex-col items-center mb-6">
         <img src={levelImage} alt="רמת שחקן" className="w-48 h-auto rounded-full border-4 border-blue-300 shadow-xl" />
