@@ -13,6 +13,10 @@ import ball7 from '../images/ball7.png';
 import ball8 from '../images/ball8.png';
 import ball9 from '../images/ball9.png';
 import ball10 from '../images/ball10.png';
+import correctSound from '../sounds/right_answer.mp3';
+import wrongSound from '../sounds/wrong_answer.mp3';
+
+
 
 function Questions() {
   const MAX_QUESTIONS = 10;
@@ -177,7 +181,11 @@ function Questions() {
     setSelected(idx);
     setLocked(true);
 
+    const correctAudio = new Audio(correctSound);
+    const wrongAudio = new Audio(wrongSound);
+
     if (idx === question.correct) {
+      correctAudio.play();
       if (!correctIndexes.includes(questionIndex)) {
         const updated = [...correctIndexes, questionIndex];
         setCorrectIndexes(updated);
@@ -186,6 +194,7 @@ function Questions() {
       setCorrectCount((c) => c + 1);
       setToast({ message: '✅ תשובה נכונה!', type: 'success' });
     } else {
+      wrongAudio.play();
       setToast({ message: '❌ תשובה שגויה!', type: 'error' });
     }
 
@@ -266,10 +275,6 @@ function Questions() {
               >
                 הצג רמז
               </button>
-              <div className="text-lg text-gray-700 dark:text-gray-200 flex items-center gap-1">
-                <span>{correctCount}</span>
-                <span className="text-xl"> X 🧆 </span>
-              </div>
             </div>
 
             {showHint && (
