@@ -25,6 +25,12 @@ function Questions() {
 
   const userName = localStorage.getItem('userName');
   const lang = localStorage.getItem('userLang');
+  const hintButtonText = {
+    en: "Show Hint",
+    es: "Mostrar pista",
+    ru: "Показать подсказку",
+  };
+  const currentHintText = hintButtonText[lang] || "Show Hint";
   const difficulty = localStorage.getItem('userDifficulty');
   const questionsList = questionsData?.[lang]?.[difficulty] || [];
   if (!lang || !difficulty || questionsList.length === 0) {
@@ -100,6 +106,7 @@ function Questions() {
     }, 1000);
     return () => clearInterval(interval);
   }, [questionIndex, locked]);
+
 
   const getNextQuestionIndex = () => {
     const availableQuestions = [];
@@ -219,6 +226,7 @@ function Questions() {
       ball5, ball6, ball7, ball8, ball9, ball10,
     ][correctCount] || ball0;
   };
+  
 
   if (questionIndex === null && !showRestartModal) return <div className="p-4">טוען שאלה...</div>;
   const question = questionsList[questionIndex] || { question: '', answers: [], hint: '', authohint: '' };
@@ -273,7 +281,7 @@ function Questions() {
                 onClick={() => setShowHint(true)}
                 disabled={locked}
               >
-                הצג רמז
+                {currentHintText}
               </button>
             </div>
 
