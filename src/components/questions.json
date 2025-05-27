@@ -1,529 +1,729 @@
 {
   "us": {
     "easy": [
-  {
-    "question": "?'דלת' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Window",
-      "Chair",
-      "Door",
-      "Book"
-    ],
-    "correct": 2,
-    "hint": "It's a basic item in a house. You use it to enter or exit a room.",
-    "authohint": "You need to open and close this to go into or out of rooms."
-  },
-  {
-    "question": "?'חתול' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Dog",
-      "Chair",
-      "Cat",
-      "House"
-    ],
-    "correct": 2,
-    "hint": "It's a common household pet, often likes to nap and purr.",
-    "authohint": "This animal usually lands on its feet and is famous for chasing mice."
-  },
-  {
-    "question": "?'כלב' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Cat",
-      "Dog",
-      "Fish",
-      "Bird"
-    ],
-    "correct": 1,
-    "hint": "It's a popular pet known as man's best friend.",
-    "authohint": "This animal wags its tail and likes to play fetch."
-  },
-  {
-    "question": "?'בית' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Car",
-      "School",
-      "House",
-      "Store"
-    ],
-    "correct": 2,
-    "hint": "It's where most people live.",
-    "authohint": "You sleep and eat here—it's your home."
-  },
-  {
-    "question": "?'מים' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Fire",
-      "Water",
-      "Air",
-      "Earth"
-    ],
-    "correct": 1,
-    "hint": "You drink it when you're thirsty.",
-    "authohint": "This clear liquid comes from the tap and is essential for life."
-  },
-  {
-    "question": "?'ספר' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Table",
-      "Book",
-      "Pen",
-      "Window"
-    ],
-    "correct": 1,
-    "hint": "You read it. It has pages and often a cover.",
-    "authohint": "Stories and information are written in this object."
-  },
-  {
-    "question": "?'אוכל' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Drink",
-      "Walk",
-      "Eat",
-      "Sleep"
-    ],
-    "correct": 2,
-    "hint": "It's something you do when you're hungry.",
-    "authohint": "This is what you put in your mouth when you want a meal."
-  },
-  {
-    "question": "?'לשתות' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Drink",
-      "Dance",
-      "Run",
-      "Eat"
-    ],
-    "correct": 0,
-    "hint": "You do this with water or juice.",
-    "authohint": "You need to do this when you’re thirsty, usually with a glass or cup."
-  },
-  {
-    "question": "?'חבר' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Enemy",
-      "Teacher",
-      "Friend",
-      "Parent"
-    ],
-    "correct": 2,
-    "hint": "Someone you like and spend time with.",
-    "authohint": "This is a person you hang out with and trust."
-  },
-  {
-    "question": "?'שמש' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Moon",
-      "Star",
-      "Sun",
-      "Cloud"
-    ],
-    "correct": 2,
-    "hint": "It shines in the sky during the day.",
-    "authohint": "This gives us light and warmth every day."
-  },
-  {
-    "question": "?'עץ' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Tree",
-      "Flower",
-      "Bush",
-      "Grass"
-    ],
-    "correct": 0,
-    "hint": "It's a tall plant with a trunk and branches.",
-    "authohint": "You might climb this or see birds sitting in it."
-  },
-  {
-    "question": "?'מכונית' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Bicycle",
-      "Car",
-      "Bus",
-      "Train"
-    ],
-    "correct": 1,
-    "hint": "You drive it on the road.",
-    "authohint": "You need keys to start this vehicle."
-  },
-  {
-    "question": "?'מים קרים' What is the correct translation of the Hebrew phrase",
-    "answers": [
-      "Hot water",
-      "Cold water",
-      "Milk",
-      "Juice"
-    ],
-    "correct": 1,
-    "hint": "You drink it when it's hot outside.",
-    "authohint": "You might want ice in your glass with this drink."
-  },
-  {
-    "question": "?'ילד' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Girl",
-      "Boy",
-      "Baby",
-      "Man"
-    ],
-    "correct": 1,
-    "hint": "A young male child.",
-    "authohint": "A young guy, not yet a man."
-  },
-  {
-    "question": "?'ילדה' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Boy",
-      "Woman",
-      "Girl",
-      "Teacher"
-    ],
-    "correct": 2,
-    "hint": "A young female child.",
-    "authohint": "A young girl, not yet a woman."
-  },
-  {
-    "question": "?'חלב' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Milk",
-      "Juice",
-      "Soup",
-      "Cheese"
-    ],
-    "correct": 0,
-    "hint": "You pour it into your cereal.",
-    "authohint": "Kids often drink this with cookies."
-  },
-  {
-    "question": "?'ללכת' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Run",
-      "Go",
-      "Walk",
-      "Stay"
-    ],
-    "correct": 2,
-    "hint": "You do this with your feet to move forward.",
-    "authohint": "You do this when you’re moving on foot but not running."
-  },
-  {
-    "question": "?'שמיים' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Sky",
-      "Sea",
-      "Sand",
-      "Cloud"
-    ],
-    "correct": 0,
-    "hint": "You see it when you look up during the day.",
-    "authohint": "Birds and planes travel through this."
-  },
-  {
-    "question": "?'לישון' What is the correct translation of the Hebrew word",
-    "answers": [
-      "Eat",
-      "Sleep",
-      "Walk",
-      "Jump"
-    ],
-    "correct": 1,
-    "hint": "You do this at night to rest.",
-    "authohint": "You close your eyes and rest this way, usually in bed."
-  },
-  {
-    "question": "?'מִישְׁמַשׁ' What is the best translation of the Hebrew word",
-    "answers": [
-      "Blender",
-      "Tidy room",
-      "Mix / Mess",
-      "Fruit"
-    ],
-    "correct": 2,
-    "hint": "It describes a situation where many things are mixed together in a messy way.",
-    "authohint": "This word means things are jumbled up and not in order."
-  }
+      {
+        "question": "?'דלת' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Window",
+          "Chair",
+          "Door",
+          "Book"
+        ],
+        "correct": 2,
+        "hint": "It's a basic item in a house. You use it to enter or exit a room",
+        "authohint": "You need to open and close this to go into or out of rooms"
+      },
+      {
+        "question": "?'חתול' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Dog",
+          "Chair",
+          "Cat",
+          "House"
+        ],
+        "correct": 2,
+        "hint": "It's a common household pet, often likes to nap and purr",
+        "authohint": "This animal usually lands on its feet and is famous for chasing mice"
+      },
+      {
+        "question": "?'כלב' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Cat",
+          "Dog",
+          "Fish",
+          "Bird"
+        ],
+        "correct": 1,
+        "hint": "It's a popular pet known as man's best friend",
+        "authohint": "This animal wags its tail and likes to play fetch"
+      },
+      {
+        "question": "?'בית' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Car",
+          "School",
+          "House",
+          "Store"
+        ],
+        "correct": 2,
+        "hint": "It's where most people live",
+        "authohint": "You sleep and eat here—it's your home"
+      },
+      {
+        "question": "?'מים' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Fire",
+          "Water",
+          "Air",
+          "Earth"
+        ],
+        "correct": 1,
+        "hint": "You drink it when you're thirsty",
+        "authohint": "This clear liquid comes from the tap and is essential for life"
+      },
+      {
+        "question": "?'ספר' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Table",
+          "Book",
+          "Pen",
+          "Window"
+        ],
+        "correct": 1,
+        "hint": "You read it. It has pages and often a cover",
+        "authohint": "Stories and information are written in this object"
+      },
+      {
+        "question": "?'אוכל' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Drink",
+          "Walk",
+          "Eat",
+          "Sleep"
+        ],
+        "correct": 2,
+        "hint": "It's something you do when you're hungry",
+        "authohint": "This is what you put in your mouth when you want a meal"
+      },
+      {
+        "question": "?'לשתות' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Drink",
+          "Dance",
+          "Run",
+          "Eat"
+        ],
+        "correct": 0,
+        "hint": "You do this with water or juice",
+        "authohint": "You need to do this when you’re thirsty, usually with a glass or cup"
+      },
+      {
+        "question": "?'חבר' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Enemy",
+          "Teacher",
+          "Friend",
+          "Parent"
+        ],
+        "correct": 2,
+        "hint": "Someone you like and spend time with",
+        "authohint": "This is a person you hang out with and trust"
+      },
+      {
+        "question": "?'שמש' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Moon",
+          "Star",
+          "Sun",
+          "Cloud"
+        ],
+        "correct": 2,
+        "hint": "It shines in the sky during the day",
+        "authohint": "This gives us light and warmth every day"
+      },
+      {
+        "question": "?'עץ' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Tree",
+          "Flower",
+          "Bush",
+          "Grass"
+        ],
+        "correct": 0,
+        "hint": "It's a tall plant with a trunk and branches",
+        "authohint": "You might climb this or see birds sitting in it"
+      },
+      {
+        "question": "?'מכונית' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Bicycle",
+          "Car",
+          "Bus",
+          "Train"
+        ],
+        "correct": 1,
+        "hint": "You drive it on the road",
+        "authohint": "You need keys to start this vehicle"
+      },
+      {
+        "question": "?'מים קרים' What is the correct translation of the Hebrew phrase",
+        "answers": [
+          "Hot water",
+          "Cold water",
+          "Milk",
+          "Juice"
+        ],
+        "correct": 1,
+        "hint": "You drink it when it's hot outside",
+        "authohint": "You might want ice in your glass with this drink"
+      },
+      {
+        "question": "?'ילד' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Girl",
+          "Boy",
+          "Baby",
+          "Man"
+        ],
+        "correct": 1,
+        "hint": "A young male child",
+        "authohint": "A young guy, not yet a man"
+      },
+      {
+        "question": "?'ילדה' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Boy",
+          "Woman",
+          "Girl",
+          "Teacher"
+        ],
+        "correct": 2,
+        "hint": "A young female child",
+        "authohint": "A young girl, not yet a woman"
+      },
+      {
+        "question": "?'חלב' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Milk",
+          "Juice",
+          "Soup",
+          "Cheese"
+        ],
+        "correct": 0,
+        "hint": "You pour it into your cereal",
+        "authohint": "Kids often drink this with cookies"
+      },
+      {
+        "question": "?'ללכת' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Run",
+          "Go",
+          "Walk",
+          "Stay"
+        ],
+        "correct": 2,
+        "hint": "You do this with your feet to move forward",
+        "authohint": "You do this when you’re moving on foot but not running"
+      },
+      {
+        "question": "?'שמיים' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Sky",
+          "Sea",
+          "Sand",
+          "Cloud"
+        ],
+        "correct": 0,
+        "hint": "You see it when you look up during the day",
+        "authohint": "Birds and planes travel through this"
+      },
+      {
+        "question": "?'לישון' What is the correct translation of the Hebrew word",
+        "answers": [
+          "Eat",
+          "Sleep",
+          "Walk",
+          "Jump"
+        ],
+        "correct": 1,
+        "hint": "You do this at night to rest",
+        "authohint": "You close your eyes and rest this way, usually in bed"
+      },
+      {
+        "question": "?'מִישְׁמַשׁ' What is the best translation of the Hebrew word",
+        "answers": [
+          "Blender",
+          "Tidy room",
+          "Mix / Mess",
+          "Fruit"
+        ],
+        "correct": 2,
+        "hint": "It describes a situation where many things are mixed together in a messy way",
+        "authohint": "This word means things are jumbled up and not in order"
+      }
     ],
     "medium": [
       {
         "question": "?'אני גר ב_____' Complete the sentence:",
-        "answers": ["תפוח", "ספר", "בית", "חתול"],
+        "answers": [
+          "תפוח",
+          "ספר",
+          "בית",
+          "חתול"
+        ],
         "correct": 2,
-        "hint": "Think about where someone lives.",
-        "authohint": "It's where you go after work or school to rest and sleep."
+        "hint": "Think about where someone lives",
+        "authohint": "It's where you go after work or school to rest and sleep"
       },
       {
         "question": "?'אני אוהב לאכול _____' Complete the sentence:",
-        "answers": ["שולחן", "תפוח", "כלב", "מכונית"],
+        "answers": [
+          "שולחן",
+          "תפוח",
+          "כלב",
+          "מכונית"
+        ],
         "correct": 1,
-        "hint": "Think of something you can eat.",
-        "authohint": "It's a fruit that is red or green and often found in lunchboxes."
+        "hint": "Think of something you can eat",
+        "authohint": "It's a fruit that is red or green and often found in lunchboxes"
       },
       {
         "question": "?'אני שותה _____' Complete the sentence:",
-        "answers": ["לחם", "מים", "מכונית", "כיסא"],
+        "answers": [
+          "לחם",
+          "מים",
+          "מכונית",
+          "כיסא"
+        ],
         "correct": 1,
-        "hint": "Think about what people drink.",
-        "authohint": "It's a clear, tasteless liquid essential for life."
+        "hint": "Think about what people drink",
+        "authohint": "It's a clear, tasteless liquid essential for life"
       },
       {
         "question": "?'אני קורא _____' Complete the sentence:",
-        "answers": ["ספר", "שולחן", "חלון", "מזלג"],
+        "answers": [
+          "ספר",
+          "שולחן",
+          "חלון",
+          "מזלג"
+        ],
         "correct": 0,
-        "hint": "Think about what you can read.",
-        "authohint": "It has pages, words, and sometimes chapters."
+        "hint": "Think about what you can read",
+        "authohint": "It has pages, words, and sometimes chapters"
       },
       {
         "question": "?'אני הולך ל_____' Complete the sentence:",
-        "answers": ["חתול", "בית", "בית ספר", "עץ"],
+        "answers": [
+          "חתול",
+          "בית",
+          "בית ספר",
+          "עץ"
+        ],
         "correct": 2,
-        "hint": "Think about where children go to learn.",
-        "authohint": "You carry a backpack when you go here as a child."
+        "hint": "Think about where children go to learn",
+        "authohint": "You carry a backpack when you go here as a child"
       },
       {
         "question": "?'אני רואה _____' Complete the sentence:",
-        "answers": ["טלוויזיה", "ספר", "אוטובוס", "אור"],
+        "answers": [
+          "טלוויזיה",
+          "ספר",
+          "אוטובוס",
+          "אור"
+        ],
         "correct": 0,
-        "hint": "Think of what you watch at home in the evening.",
-        "authohint": "This is a screen in many living rooms for shows and movies."
+        "hint": "Think of what you watch at home in the evening",
+        "authohint": "This is a screen in many living rooms for shows and movies"
       },
       {
         "question": "?'אני שומע _____' Complete the sentence:",
-        "answers": ["שיר", "דלת", "מכנסיים", "אבן"],
+        "answers": [
+          "שיר",
+          "דלת",
+          "מכנסיים",
+          "אבן"
+        ],
         "correct": 0,
-        "hint": "You listen to it, often with music.",
-        "authohint": "It often plays on the radio or your phone and has melody and lyrics."
+        "hint": "You listen to it, often with music",
+        "authohint": "It often plays on the radio or your phone and has melody and lyrics"
       },
       {
         "question": "?'אני פותח את ה_____' Complete the sentence:",
-        "answers": ["כיסא", "דלת", "חולצה", "יד"],
+        "answers": [
+          "כיסא",
+          "דלת",
+          "חולצה",
+          "יד"
+        ],
         "correct": 1,
-        "hint": "You open it to enter a room.",
-        "authohint": "It usually has a handle or a knob and lets you go in or out."
+        "hint": "You open it to enter a room",
+        "authohint": "It usually has a handle or a knob and lets you go in or out"
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": ["חולצה", "שולחן", "מיטה", "בקבוק"],
+        "answers": [
+          "חולצה",
+          "שולחן",
+          "מיטה",
+          "בקבוק"
+        ],
         "correct": 0,
-        "hint": "You wear it on your upper body.",
-        "authohint": "You put your arms through its sleeves and it covers your torso."
+        "hint": "You wear it on your upper body",
+        "authohint": "You put your arms through its sleeves and it covers your torso"
       },
       {
         "question": "?'אני משחק עם _____' Complete the sentence:",
-        "answers": ["ילד", "עץ", "כיסא", "חלון"],
+        "answers": [
+          "ילד",
+          "עץ",
+          "כיסא",
+          "חלון"
+        ],
         "correct": 0,
-        "hint": "Think of someone you can play with.",
-        "authohint": "This is a person, often your age, who joins you in games."
+        "hint": "Think of someone you can play with",
+        "authohint": "This is a person, often your age, who joins you in games"
       },
       {
         "question": "?'אני כותב עם _____' Complete the sentence:",
-        "answers": ["ספר", "עט", "שולחן", "כוס"],
+        "answers": [
+          "ספר",
+          "עט",
+          "שולחן",
+          "כוס"
+        ],
         "correct": 1,
-        "hint": "A common tool for writing.",
-        "authohint": "It uses ink and you hold it in your hand to write words."
+        "hint": "A common tool for writing",
+        "authohint": "It uses ink and you hold it in your hand to write words"
       },
       {
         "question": "?'אני שוכב על ה_____' Complete the sentence:",
-        "answers": ["כיסא", "מיטה", "שולחן", "חלון"],
+        "answers": [
+          "כיסא",
+          "מיטה",
+          "שולחן",
+          "חלון"
+        ],
         "correct": 1,
-        "hint": "You lie down here to sleep.",
-        "authohint": "You cover yourself with a blanket while resting on this."
+        "hint": "You lie down here to sleep",
+        "authohint": "You cover yourself with a blanket while resting on this"
       },
       {
         "question": "?'אני אוכל עם _____' Complete the sentence:",
-        "answers": ["מזלג", "ספר", "טלפון", "דלת"],
+        "answers": [
+          "מזלג",
+          "ספר",
+          "טלפון",
+          "דלת"
+        ],
         "correct": 0,
-        "hint": "You use this to eat food.",
-        "authohint": "This utensil has prongs and is used to pick up pieces of food."
+        "hint": "You use this to eat food",
+        "authohint": "This utensil has prongs and is used to pick up pieces of food"
       },
       {
         "question": "?'אני שם את הספר על ה_____' Complete the sentence:",
-        "answers": ["חלון", "שולחן", "רצפה", "כיסא"],
+        "answers": [
+          "חלון",
+          "שולחן",
+          "רצפה",
+          "כיסא"
+        ],
         "correct": 1,
-        "hint": "Common furniture where you place things.",
-        "authohint": "This piece of furniture often holds plates, books, or laptops."
+        "hint": "Common furniture where you place things",
+        "authohint": "This piece of furniture often holds plates, books, or laptops"
       },
       {
         "question": "?'אני מדבר עם ה_____' Complete the sentence:",
-        "answers": ["חבר", "ספר", "דלת", "כוס"],
+        "answers": [
+          "חבר",
+          "ספר",
+          "דלת",
+          "כוס"
+        ],
         "correct": 0,
-        "hint": "Someone you talk to.",
-        "authohint": "It's a person who listens to you and shares with you."
+        "hint": "Someone you talk to",
+        "authohint": "It's a person who listens to you and shares with you"
       },
       {
         "question": "?'אני שוטף את ה_____' Complete the sentence:",
-        "answers": ["ידיים", "כיסא", "מכנסיים", "עץ"],
+        "answers": [
+          "ידיים",
+          "כיסא",
+          "מכנסיים",
+          "עץ"
+        ],
         "correct": 0,
-        "hint": "You do this before eating or after the bathroom.",
-        "authohint": "Soap and water are usually involved when you clean these."
+        "hint": "You do this before eating or after the bathroom",
+        "authohint": "Soap and water are usually involved when you clean these"
       },
       {
         "question": "?'אני שם מים בכ_____' Complete the sentence:",
-        "answers": ["כוס", "חלון", "מיטה", "תמונה"],
+        "answers": [
+          "כוס",
+          "חלון",
+          "מיטה",
+          "תמונה"
+        ],
         "correct": 0,
-        "hint": "You pour water into this to drink.",
-        "authohint": "It's a small container you hold in your hand and drink from."
+        "hint": "You pour water into this to drink",
+        "authohint": "It's a small container you hold in your hand and drink from"
       },
       {
         "question": "?'אני רץ ל_____' Complete the sentence:",
-        "answers": ["בית ספר", "שולחן", "קיר", "ספר"],
+        "answers": [
+          "בית ספר",
+          "שולחן",
+          "קיר",
+          "ספר"
+        ],
         "correct": 0,
-        "hint": "Where kids go every morning.",
-        "authohint": "A yellow bus often drops students off at this place."
+        "hint": "Where kids go every morning",
+        "authohint": "A yellow bus often drops students off at this place"
       },
       {
         "question": "?'אני לובש _____' Complete the sentence:",
-        "answers": ["נעליים", "חלון", "שולחן", "ספר"],
+        "answers": [
+          "נעליים",
+          "חלון",
+          "שולחן",
+          "ספר"
+        ],
         "correct": 0,
-        "hint": "You wear them on your feet.",
-        "authohint": "You tie their laces and walk outside with them on."
+        "hint": "You wear them on your feet",
+        "authohint": "You tie their laces and walk outside with them on"
       },
       {
         "question": "?'אני מחפש את ה_____' Complete the sentence:",
-        "answers": ["מפתח", "אור", "כיסא", "קיר"],
+        "answers": [
+          "מפתח",
+          "אור",
+          "כיסא",
+          "קיר"
+        ],
         "correct": 0,
-        "hint": "You need it to open the door.",
-        "authohint": "It unlocks locks and is usually carried on a ring."
+        "hint": "You need it to open the door",
+        "authohint": "It unlocks locks and is usually carried on a ring"
       }
     ],
     "hard": [
       {
         "question": "?'הִתְפַּקּוּת'  Translate this Hebrew word to English:",
-        "answers": ["Retention", "Self-control", "Eruption", "Regression"],
+        "answers": [
+          "Retention",
+          "Self-control",
+          "Eruption",
+          "Regression"
+        ],
         "correct": 1,
-        "hint": "The ability to restrain yourself from acting or speaking.",
-        "authohint": "It's the word for stopping yourself from doing something you want to do."
+        "hint": "The ability to restrain yourself from acting or speaking",
+        "authohint": "It's the word for stopping yourself from doing something you want to do"
       },
       {
         "question": "?'אֲרִיכָה'  Translate this Hebrew word to English:",
-        "answers": ["Lengthening", "Indictment", "Edition", "Cooperation"],
+        "answers": [
+          "Lengthening",
+          "Indictment",
+          "Edition",
+          "Cooperation"
+        ],
         "correct": 2,
-        "hint": "A published version of a text, film, or music track.",
-        "authohint": "It's a word used for the specific version of a book or newspaper."
+        "hint": "A published version of a text, film, or music track",
+        "authohint": "It's a word used for the specific version of a book or newspaper"
       },
       {
         "question": "?'תְּחִינָה'  Translate this Hebrew word to English:",
-        "answers": ["Plea / Supplication", "Grinding", "Flirtation", "Excavation"],
+        "answers": [
+          "Plea / Supplication",
+          "Grinding",
+          "Flirtation",
+          "Excavation"
+        ],
         "correct": 0,
-        "hint": "A heartfelt request, often to a higher power.",
-        "authohint": "It's what you do when you beg for mercy or help."
+        "hint": "A heartfelt request, often to a higher power",
+        "authohint": "It's what you do when you beg for mercy or help"
       },
       {
         "question": "?'עֵרֶךְ מוֹסָף'  Translate this Hebrew term to English:",
-        "answers": ["Added sugar", "Marginal value", "Supplementary angle", "Additional chapter"],
+        "answers": [
+          "Added sugar",
+          "Marginal value",
+          "Supplementary angle",
+          "Additional chapter"
+        ],
         "correct": 1,
-        "hint": "An economics/finance term for an extra benefit created.",
-        "authohint": "It's the extra worth or profit generated by an activity."
+        "hint": "An economics/finance term for an extra benefit created",
+        "authohint": "It's the extra worth or profit generated by an activity"
       },
       {
         "question": "?'מְנוּדֶה'  Translate this Hebrew word to English:",
-        "answers": ["Exiled", "Beloved", "Innovative", "Condensed"],
+        "answers": [
+          "Exiled",
+          "Beloved",
+          "Innovative",
+          "Condensed"
+        ],
         "correct": 0,
-        "hint": "Someone forced to live outside their community or country.",
-        "authohint": "It's what you call someone sent away from society."
+        "hint": "Someone forced to live outside their community or country",
+        "authohint": "It's what you call someone sent away from society"
       },
       {
         "question": "?'הוא שבר את הקרח בשיחה'  Translate this Hebrew phrase to English:",
-        "answers": ["He ruined the conversation", "He broke the ice in the conversation", "He froze during the talk", "He heated up the argument"],
+        "answers": [
+          "He ruined the conversation",
+          "He broke the ice in the conversation",
+          "He froze during the talk",
+          "He heated up the argument"
+        ],
         "correct": 1,
-        "hint": "An idiom meaning he made the atmosphere more relaxed.",
-        "authohint": "This is a phrase used when someone makes others comfortable to start talking."
+        "hint": "An idiom meaning he made the atmosphere more relaxed",
+        "authohint": "This is a phrase used when someone makes others comfortable to start talking"
       },
       {
         "question": "?'הם הגיעו מים עד נפש'  Translate this Hebrew idiom to English:",
-        "answers": ["They’re up to their necks in trouble", "They’re thirsty for life", "They reached calm waters", "They’re sailing smoothly"],
+        "answers": [
+          "They’re up to their necks in trouble",
+          "They’re thirsty for life",
+          "They reached calm waters",
+          "They’re sailing smoothly"
+        ],
         "correct": 0,
-        "hint": "Literally “waters reached the soul” – they can’t take it anymore.",
-        "authohint": "This is said when someone can't handle more stress or problems."
+        "hint": "Literally “waters reached the soul” – they can’t take it anymore",
+        "authohint": "This is said when someone can't handle more stress or problems"
       },
       {
         "question": "?'ככלב השב אל קיאו'  Translate this biblical-style phrase:",
-        "answers": ["Like a dog returning to its vomit", "Like a lion guarding its cubs", "Like a bird fleeing the net", "Like a fish seeking water"],
+        "answers": [
+          "Like a dog returning to its vomit",
+          "Like a lion guarding its cubs",
+          "Like a bird fleeing the net",
+          "Like a fish seeking water"
+        ],
         "correct": 0,
-        "hint": "Used to describe someone repeating a bad mistake.",
-        "authohint": "It's about someone repeating the same mistake despite knowing better."
+        "hint": "Used to describe someone repeating a bad mistake",
+        "authohint": "It's about someone repeating the same mistake despite knowing better"
       },
       {
         "question": "?'סגרתי מעגל'  Translate this colloquial Hebrew phrase:",
-        "answers": ["I completed the circle / found closure", "I missed the mark", "I shut the gate", "I solved the puzzle"],
+        "answers": [
+          "I completed the circle / found closure",
+          "I missed the mark",
+          "I shut the gate",
+          "I solved the puzzle"
+        ],
         "correct": 0,
-        "hint": "Means finally finishing something unresolved.",
-        "authohint": "It's about resolving unfinished business or achieving closure."
+        "hint": "Means finally finishing something unresolved",
+        "authohint": "It's about resolving unfinished business or achieving closure"
       },
       {
         "question": "?'אי אפשר לאחוז את החבל משני קצותיו'  Translate this proverb:",
-        "answers": ["You can’t hold the rope at both ends", "You can’t see the wood for the trees", "Don’t count your chickens", "The early bird catches the worm"],
+        "answers": [
+          "You can’t hold the rope at both ends",
+          "You can’t see the wood for the trees",
+          "Don’t count your chickens",
+          "The early bird catches the worm"
+        ],
         "correct": 0,
-        "hint": "Equivalent to 'You can’t have it both ways'.",
-        "authohint": "It's a phrase for situations where you have to choose—you can't have both options."
+        "hint": "Equivalent to 'You can’t have it both ways'",
+        "authohint": "It's a phrase for situations where you have to choose—you can't have both options"
       },
       {
         "question": "?'חִנָּה'  Translate this Hebrew word to English:",
-        "answers": ["Grace / Charm", "Parking fine", "Pity", "Jealousy"],
+        "answers": [
+          "Grace / Charm",
+          "Parking fine",
+          "Pity",
+          "Jealousy"
+        ],
         "correct": 0,
-        "hint": "Also the name of a traditional North-African Jewish ceremony.",
-        "authohint": "It's a quality that makes someone attractive or pleasant."
+        "hint": "Also the name of a traditional North-African Jewish ceremony",
+        "authohint": "It's a quality that makes someone attractive or pleasant"
       },
       {
         "question": "?'תַּעֲלוּל'  Translate this Hebrew word to English:",
-        "answers": ["Prank", "Achievement", "Revival", "Collapse"],
+        "answers": [
+          "Prank",
+          "Achievement",
+          "Revival",
+          "Collapse"
+        ],
         "correct": 0,
-        "hint": "A mischievous trick, often by children.",
-        "authohint": "It's a playful trick, often meant to make people laugh."
+        "hint": "A mischievous trick, often by children",
+        "authohint": "It's a playful trick, often meant to make people laugh"
       },
       {
         "question": "?'הִתגַלּוּת'  Translate this Hebrew word to English:",
-        "answers": ["Discovery / Revelation", "Migration", "Conspiracy", "Decoration"],
+        "answers": [
+          "Discovery / Revelation",
+          "Migration",
+          "Conspiracy",
+          "Decoration"
+        ],
         "correct": 0,
-        "hint": "When something hidden becomes known.",
-        "authohint": "It's what happens when a secret is finally revealed."
+        "hint": "When something hidden becomes known",
+        "authohint": "It's what happens when a secret is finally revealed"
       },
       {
         "question": "?'מַסְלוּל'  Translate this Hebrew word to English:",
-        "answers": ["Traction", "Track / Route", "Wound", "Gesture"],
+        "answers": [
+          "Traction",
+          "Track / Route",
+          "Wound",
+          "Gesture"
+        ],
         "correct": 1,
-        "hint": "What hikers or university students might follow.",
-        "authohint": "It's a path or course that guides you from one place to another."
+        "hint": "What hikers or university students might follow",
+        "authohint": "It's a path or course that guides you from one place to another"
       },
       {
         "question": "?'צִפְיוֹן'  Translate this Hebrew zoology word:",
-        "answers": ["Chameleon", "Gazelle", "Sea horse", "Sand viper"],
+        "answers": [
+          "Chameleon",
+          "Gazelle",
+          "Sea horse",
+          "Sand viper"
+        ],
         "correct": 2,
-        "hint": "A delicate marine creature that looks like a tiny horse.",
-        "authohint": "It's a small sea animal with a curled tail and horse-like head."
+        "hint": "A delicate marine creature that looks like a tiny horse",
+        "authohint": "It's a small sea animal with a curled tail and horse-like head"
       },
       {
         "question": "?'אל תסתכל בקנקן אלא במה שיש בו'  Translate this saying:",
-        "answers": ["Don't judge a book by its cover", "Better late than never", "Actions speak louder than words", "The pot calls the kettle black"],
+        "answers": [
+          "Don't judge a book by its cover",
+          "Better late than never",
+          "Actions speak louder than words",
+          "The pot calls the kettle black"
+        ],
         "correct": 0,
-        "hint": "Literally 'Don’t look at the jug but at what’s inside'.",
-        "authohint": "This means you should value substance over appearance."
+        "hint": "Literally 'Don’t look at the jug but at what’s inside'",
+        "authohint": "This means you should value substance over appearance"
       },
       {
         "question": "?'הוא ירד מהפסים'  Translate this expression:",
-        "answers": ["He went off the rails / lost his mind", "He missed the train", "He fixed the tracks", "He slowed down"],
+        "answers": [
+          "He went off the rails / lost his mind",
+          "He missed the train",
+          "He fixed the tracks",
+          "He slowed down"
+        ],
         "correct": 0,
-        "hint": "Means someone acting irrationally.",
-        "authohint": "It's used for someone who is behaving in a crazy or abnormal way."
+        "hint": "Means someone acting irrationally",
+        "authohint": "It's used for someone who is behaving in a crazy or abnormal way"
       },
       {
         "question": "?'היא קפצה לביקור חטוף'  Translate this Hebrew phrase:",
-        "answers": ["She jumped on a long journey", "She dropped by for a quick visit", "She skipped the meeting entirely", "She flew abroad suddenly"],
+        "answers": [
+          "She jumped on a long journey",
+          "She dropped by for a quick visit",
+          "She skipped the meeting entirely",
+          "She flew abroad suddenly"
+        ],
         "correct": 1,
-        "hint": "A very quick social call.",
-        "authohint": "This means someone visited for only a very short time."
+        "hint": "A very quick social call",
+        "authohint": "This means someone visited for only a very short time"
       },
       {
         "question": "?'נַעֲצָה'  Translate this Hebrew verb (passive form) to English:",
-        "answers": ["Was advised", "Was inserted", "Was injured", "Was painted"],
+        "answers": [
+          "Was advised",
+          "Was inserted",
+          "Was injured",
+          "Was painted"
+        ],
         "correct": 1,
-        "hint": "Root נ-ע-ץ, as 'to stick/insert a pin'.",
-        "authohint": "It's the passive form of the action you do when putting a pin into a board."
+        "hint": "Root נ-ע-ץ, as 'to stick/insert a pin'",
+        "authohint": "It's the passive form of the action you do when putting a pin into a board"
       },
       {
         "question": "?'הִקָּרוּת'  Translate this Hebrew noun to English:",
-        "answers": ["Coincidence / Chance encounter", "Prediction", "Instruction", "Harvest"],
+        "answers": [
+          "Coincidence / Chance encounter",
+          "Prediction",
+          "Instruction",
+          "Harvest"
+        ],
         "correct": 0,
-        "hint": "From the root ק-ר-ה (to happen).",
-        "authohint": "It's a word for a meeting that happens purely by chance."
+        "hint": "From the root ק-ר-ה (to happen)",
+        "authohint": "It's a word for a meeting that happens purely by chance"
       }
     ]
   },
@@ -538,8 +738,8 @@
           "Libro"
         ],
         "correct": 2,
-        "hint": "Es un objeto básico en la casa: lo abres para entrar o salir.",
-        "authohint": "Think carefully before answering."
+        "hint": "Es un objeto básico en la casa: lo abres para entrar o salir",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'חתול' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -550,8 +750,8 @@
           "Casa"
         ],
         "correct": 2,
-        "hint": "Una mascota común que duerme mucho y suele ronronear.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Una mascota común que duerme mucho y suele ronronear",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'כלב' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -562,8 +762,8 @@
           "Pájaro"
         ],
         "correct": 1,
-        "hint": "Lo llaman el mejor amigo del hombre.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Lo llaman el mejor amigo del hombre",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'בית' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -574,8 +774,8 @@
           "Tienda"
         ],
         "correct": 2,
-        "hint": "Es donde vive la mayoría de la gente.",
-        "authohint": "It's related to something familiar."
+        "hint": "Es donde vive la mayoría de la gente",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'מים' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -586,8 +786,8 @@
           "Tierra"
         ],
         "correct": 1,
-        "hint": "Lo bebes cuando tienes sed.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Lo bebes cuando tienes sed",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'ספר' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -598,8 +798,8 @@
           "Ventana"
         ],
         "correct": 1,
-        "hint": "Lo lees; tiene páginas y una portada.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Lo lees; tiene páginas y una portada",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אוכל' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -610,8 +810,8 @@
           "Dormir"
         ],
         "correct": 2,
-        "hint": "Lo haces cuando tienes hambre.",
-        "authohint": "Think about the context of the word."
+        "hint": "Lo haces cuando tienes hambre",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'לשתות' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -622,8 +822,8 @@
           "Comer"
         ],
         "correct": 0,
-        "hint": "Lo haces con agua o zumo.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Lo haces con agua o zumo",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'חבר' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -634,8 +834,8 @@
           "Padre"
         ],
         "correct": 2,
-        "hint": "Alguien con quien te gusta pasar tiempo.",
-        "authohint": "Focus on the key term."
+        "hint": "Alguien con quien te gusta pasar tiempo",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'שמש' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -646,8 +846,8 @@
           "Nube"
         ],
         "correct": 2,
-        "hint": "Brilla en el cielo durante el día.",
-        "authohint": "Focus on the key term."
+        "hint": "Brilla en el cielo durante el día",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'עץ' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -658,8 +858,8 @@
           "Césped"
         ],
         "correct": 0,
-        "hint": "Es una planta alta con tronco y ramas.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Es una planta alta con tronco y ramas",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'מכונית' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -670,8 +870,8 @@
           "Tren"
         ],
         "correct": 1,
-        "hint": "Lo conduces por la carretera.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Lo conduces por la carretera",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'מים קרים' ¿Cuál es la traducción correcta de la frase hebrea?",
@@ -682,8 +882,8 @@
           "Zumo"
         ],
         "correct": 1,
-        "hint": "Lo bebes cuando hace calor.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Lo bebes cuando hace calor",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'ילד' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -694,8 +894,8 @@
           "Hombre"
         ],
         "correct": 1,
-        "hint": "Un niño varón joven.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Un niño varón joven",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'ילדה' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -706,8 +906,8 @@
           "Profesora"
         ],
         "correct": 2,
-        "hint": "Una niña joven.",
-        "authohint": "Think carefully before answering."
+        "hint": "Una niña joven",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'חלב' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -718,8 +918,8 @@
           "Queso"
         ],
         "correct": 0,
-        "hint": "Se lo echas al cereal.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Se lo echas al cereal",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'ללכת' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -730,8 +930,8 @@
           "Quedarse"
         ],
         "correct": 2,
-        "hint": "Lo haces con los pies para avanzar.",
-        "authohint": "Think carefully before answering."
+        "hint": "Lo haces con los pies para avanzar",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'שמיים' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -742,8 +942,8 @@
           "Nube"
         ],
         "correct": 0,
-        "hint": "Lo ves al mirar hacia arriba durante el día.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Lo ves al mirar hacia arriba durante el día",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'לישון' ¿Cuál es la traducción correcta de la palabra hebrea?",
@@ -754,8 +954,8 @@
           "Saltar"
         ],
         "correct": 1,
-        "hint": "Lo haces de noche para descansar.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Lo haces de noche para descansar",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'מִישְׁמַשׁ' ¿Cuál es la mejor traducción de la palabra hebrea?",
@@ -766,8 +966,8 @@
           "Fruta"
         ],
         "correct": 2,
-        "hint": "Describe una situación donde todo está mezclado sin orden.",
-        "authohint": "It's related to something familiar."
+        "hint": "Describe una situación donde todo está mezclado sin orden",
+        "authohint": "It's related to something familiar"
       }
     ],
     "medium": [
@@ -780,8 +980,8 @@
           "חתול (gato)"
         ],
         "correct": 2,
-        "hint": "Piensa en el lugar donde vive una persona.",
-        "authohint": "It's related to something familiar."
+        "hint": "Piensa en el lugar donde vive una persona",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'אני אוהב לאכול _____' Completa la frase: (Me gusta comer _____)",
@@ -792,8 +992,8 @@
           "מכונית (coche)"
         ],
         "correct": 1,
-        "hint": "Algo que se puede comer.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Algo que se puede comer",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני שותה _____' Completa la frase: (Yo bebo _____)",
@@ -804,8 +1004,8 @@
           "כיסא (silla)"
         ],
         "correct": 1,
-        "hint": "Algo que la gente bebe.",
-        "authohint": "Think about the context of the word."
+        "hint": "Algo que la gente bebe",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'אני קורא _____' Completa la frase: (Yo leo _____)",
@@ -816,8 +1016,8 @@
           "מזלג (tenedor)"
         ],
         "correct": 0,
-        "hint": "Algo que se puede leer.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Algo que se puede leer",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני הולך ל_____' Completa la frase: (Yo voy a _____)",
@@ -828,8 +1028,8 @@
           "עץ (árbol)"
         ],
         "correct": 2,
-        "hint": "Lugar donde aprenden los niños.",
-        "authohint": "Think carefully before answering."
+        "hint": "Lugar donde aprenden los niños",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'אני רואה _____' Completa la frase: (Yo veo _____)",
@@ -840,8 +1040,8 @@
           "אור (luz)"
         ],
         "correct": 0,
-        "hint": "Algo que sueles mirar por la noche en casa.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Algo que sueles mirar por la noche en casa",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'אני שומע _____' Completa la frase: (Yo escucho _____)",
@@ -852,8 +1052,8 @@
           "אבן (piedra)"
         ],
         "correct": 0,
-        "hint": "Lo escuchas, a menudo con música.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Lo escuchas, a menudo con música",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני פותח את ה_____' Completa la frase: (Yo abro la/el _____)",
@@ -864,8 +1064,8 @@
           "יד (mano)"
         ],
         "correct": 1,
-        "hint": "La abres para entrar en una habitación.",
-        "authohint": "It's related to something familiar."
+        "hint": "La abres para entrar en una habitación",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'אני לובש _____' Completa la frase: (Yo llevo _____)",
@@ -876,8 +1076,8 @@
           "בקבוק (botella)"
         ],
         "correct": 0,
-        "hint": "Prenda que va en la parte superior del cuerpo.",
-        "authohint": "Think carefully before answering."
+        "hint": "Prenda que va en la parte superior del cuerpo",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'אני משחק עם _____' Completa la frase: (Yo juego con _____)",
@@ -888,8 +1088,8 @@
           "חלון (ventana)"
         ],
         "correct": 0,
-        "hint": "Piensa en alguien con quien puedes jugar.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Piensa en alguien con quien puedes jugar",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'אני כותב עם _____' Completa la frase: (Yo escribo con _____)",
@@ -900,8 +1100,8 @@
           "כוס (vaso)"
         ],
         "correct": 1,
-        "hint": "Herramienta común para escribir.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Herramienta común para escribir",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אני שוכב על ה_____' Completa la frase: (Yo me acuesto en la _____)",
@@ -912,8 +1112,8 @@
           "חלון (ventana)"
         ],
         "correct": 1,
-        "hint": "Lugar donde duermes.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Lugar donde duermes",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'אני אוכל עם _____' Completa la frase: (Yo como con _____)",
@@ -924,8 +1124,8 @@
           "דלת (puerta)"
         ],
         "correct": 0,
-        "hint": "Utensilio para comer.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Utensilio para comer",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני שם את הספר על ה_____' Completa la frase: (Pongo el libro en la/el _____)",
@@ -936,8 +1136,8 @@
           "כיסא (silla)"
         ],
         "correct": 1,
-        "hint": "Mueble común donde colocas cosas.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Mueble común donde colocas cosas",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני מדבר עם ה_____' Completa la frase: (Hablo con el/la _____)",
@@ -948,8 +1148,8 @@
           "כוס (vaso)"
         ],
         "correct": 0,
-        "hint": "Persona con quien charlas.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Persona con quien charlas",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני שוטף את ה_____' Completa la frase: (Me lavo las _____)",
@@ -960,8 +1160,8 @@
           "עץ (árbol)"
         ],
         "correct": 0,
-        "hint": "Lo haces antes de comer o después del baño.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Lo haces antes de comer o después del baño",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני שם מים בכ_____' Completa la frase: (Pongo agua en el/la _____)",
@@ -972,8 +1172,8 @@
           "תמונה (cuadro)"
         ],
         "correct": 0,
-        "hint": "Lo usas para beber agua.",
-        "authohint": "Focus on the key term."
+        "hint": "Lo usas para beber agua",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'אני רץ ל_____' Completa la frase: (Corro hacia la/el _____)",
@@ -984,8 +1184,8 @@
           "ספר (libro)"
         ],
         "correct": 0,
-        "hint": "Adónde van los niños cada mañana.",
-        "authohint": "Think about the context of the word."
+        "hint": "Adónde van los niños cada mañana",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'אני לובש _____' Completa la frase: (Yo llevo _____)",
@@ -996,8 +1196,8 @@
           "ספר (libro)"
         ],
         "correct": 0,
-        "hint": "Las llevas en los pies.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Las llevas en los pies",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'אני מחפש את ה_____' Completa la frase: (Busco la/el _____)",
@@ -1008,8 +1208,8 @@
           "קיר (pared)"
         ],
         "correct": 0,
-        "hint": "La necesitas para abrir la puerta.",
-        "authohint": "Focus on the key term."
+        "hint": "La necesitas para abrir la puerta",
+        "authohint": "Focus on the key term"
       }
     ],
     "hard": [
@@ -1022,8 +1222,8 @@
           "Regresión"
         ],
         "correct": 1,
-        "hint": "La capacidad de contenerse antes de actuar o hablar.",
-        "authohint": "Think carefully before answering."
+        "hint": "La capacidad de contenerse antes de actuar o hablar",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'אֲרִיכָה'  Traduce esta palabra hebrea al español:",
@@ -1034,8 +1234,8 @@
           "Cooperación"
         ],
         "correct": 2,
-        "hint": "Versión publicada de un texto, una película o una pista musical.",
-        "authohint": "Focus on the key term."
+        "hint": "Versión publicada de un texto, una película o una pista musical",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'תְּחִינָה'  Traduce esta palabra hebrea al español:",
@@ -1046,8 +1246,8 @@
           "Excavación"
         ],
         "correct": 0,
-        "hint": "Una petición sentida, a menudo dirigida a un poder superior.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Una petición sentida, a menudo dirigida a un poder superior",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'עֵרֶךְ מוֹסָף'  Traduce este término hebreo al español:",
@@ -1058,8 +1258,8 @@
           "Capítulo adicional"
         ],
         "correct": 1,
-        "hint": "Concepto de economía para un beneficio extra generado.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Concepto de economía para un beneficio extra generado",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'מְנוּדֶה'  Traduce esta palabra hebrea al español:",
@@ -1070,8 +1270,8 @@
           "Condensado"
         ],
         "correct": 0,
-        "hint": "Alguien obligado a vivir fuera de su comunidad o país.",
-        "authohint": "Focus on the key term."
+        "hint": "Alguien obligado a vivir fuera de su comunidad o país",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'הוא שבר את הקרח בשיחה'  Traduce esta frase hebrea al español:",
@@ -1082,8 +1282,8 @@
           "Calentó la discusión"
         ],
         "correct": 1,
-        "hint": "Significa que hizo el ambiente más relajado.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Significa que hizo el ambiente más relajado",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'הם הגיעו מים עד נפש'  Traduce este modismo hebreo al español:",
@@ -1094,8 +1294,8 @@
           "Navegan sin problemas"
         ],
         "correct": 0,
-        "hint": "Literalmente 'el agua llegó al alma' — ya no pueden más.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Literalmente 'el agua llegó al alma' — ya no pueden más",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'ככלב השב אל קיאו'  Traduce esta frase de estilo bíblico al español:",
@@ -1106,8 +1306,8 @@
           "Como pez que busca agua"
         ],
         "correct": 0,
-        "hint": "Se usa para alguien que repite un error.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Se usa para alguien que repite un error",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'סגרתי מעגל'  Traduce esta frase coloquial hebrea al español:",
@@ -1118,8 +1318,8 @@
           "Resolví el rompecabezas"
         ],
         "correct": 0,
-        "hint": "Significa terminar algo pendiente.",
-        "authohint": "Think about the context of the word."
+        "hint": "Significa terminar algo pendiente",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'אי אפשר לאחוז את החבל משני קצותיו'  Traduce este proverbio al español:",
@@ -1130,8 +1330,8 @@
           "Al que madruga Dios le ayuda"
         ],
         "correct": 0,
-        "hint": "Equivale a 'no se puede tener todo'.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Equivale a 'no se puede tener todo'",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'חִנָּה'  Traduce esta palabra hebrea al español:",
@@ -1142,8 +1342,8 @@
           "Envidia"
         ],
         "correct": 0,
-        "hint": "También es el nombre de una ceremonia judía norteafricana.",
-        "authohint": "Imagine a real-life example."
+        "hint": "También es el nombre de una ceremonia judía norteafricana",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'תַּעֲלוּל'  Traduce esta palabra hebrea al español:",
@@ -1154,8 +1354,8 @@
           "Colapso"
         ],
         "correct": 0,
-        "hint": "Broma o truco hecho con picardía, a menudo por niños.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Broma o truco hecho con picardía, a menudo por niños",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'הִתגַלּוּת'  Traduce esta palabra hebrea al español:",
@@ -1166,8 +1366,8 @@
           "Decoración"
         ],
         "correct": 0,
-        "hint": "Cuando algo oculto se hace conocido.",
-        "authohint": "It's related to something familiar."
+        "hint": "Cuando algo oculto se hace conocido",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'מַסְלוּל'  Traduce esta palabra hebrea al español:",
@@ -1178,8 +1378,8 @@
           "Gesto"
         ],
         "correct": 1,
-        "hint": "Lo siguen los senderistas o los estudiantes universitarios.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Lo siguen los senderistas o los estudiantes universitarios",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'צִפְיוֹן'  Traduce esta palabra zoológica hebrea al español:",
@@ -1190,8 +1390,8 @@
           "Víbora de arena"
         ],
         "correct": 2,
-        "hint": "Criatura marina delicada que parece un caballo diminuto.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Criatura marina delicada que parece un caballo diminuto",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אל תסתכל בקנקן אלא במה שיש בו'  Traduce este dicho al español:",
@@ -1202,8 +1402,8 @@
           "El sartén le dice a la olla"
         ],
         "correct": 0,
-        "hint": "Literalmente 'no mires la jarra, sino lo que contiene'.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Literalmente 'no mires la jarra, sino lo que contiene'",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'הוא ירד מהפסים'  Traduce esta expresión al español:",
@@ -1214,8 +1414,8 @@
           "Redució la velocidad"
         ],
         "correct": 0,
-        "hint": "Describe a alguien que se comporta irracionalmente.",
-        "authohint": "Think about the context of the word."
+        "hint": "Describe a alguien que se comporta irracionalmente",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'היא קפצה לביקור חטוף'  Traduce esta frase hebrea al español:",
@@ -1226,8 +1426,8 @@
           "Viajó al extranjero de repente"
         ],
         "correct": 1,
-        "hint": "Visita social muy breve.",
-        "authohint": "Focus on the key term."
+        "hint": "Visita social muy breve",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'נַעֲצָה'  Traduce este verbo hebreo (forma pasiva) al español:",
@@ -1238,8 +1438,8 @@
           "Fue pintada"
         ],
         "correct": 1,
-        "hint": "Raíz נ-ע-ץ, 'clavar o insertar un alfiler'.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Raíz נ-ע-ץ, 'clavar o insertar un alfiler'",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'הִקָּרוּת'  Traduce este sustantivo hebreo al español:",
@@ -1250,8 +1450,8 @@
           "Cosecha"
         ],
         "correct": 0,
-        "hint": "Deriva de la raíz ק‑ר‑ה 'suceder'.",
-        "authohint": "It's related to something familiar."
+        "hint": "Deriva de la raíz ק‑ר‑ה 'suceder'",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'סַבְלָנוּת'  Traduce esta palabra hebrea al español:",
@@ -1262,8 +1462,8 @@
           "Ambición"
         ],
         "correct": 0,
-        "hint": "Una virtud esencial al aprender idiomas.",
-        "authohint": "Focus on the key term."
+        "hint": "Una virtud esencial al aprender idiomas",
+        "authohint": "Focus on the key term"
       }
     ]
   },
@@ -1278,8 +1478,8 @@
           "Книга"
         ],
         "correct": 2,
-        "hint": "Открывают, чтобы войти или выйти из комнаты.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Открывают, чтобы войти или выйти из комнаты",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'חתול' Какой правильный перевод этого слова?",
@@ -1290,8 +1490,8 @@
           "Дом"
         ],
         "correct": 2,
-        "hint": "Домашнее животное, любит спать и мурлыкать.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Домашнее животное, любит спать и мурлыкать",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'כלב' Какой правильный перевод этого слова?",
@@ -1302,8 +1502,8 @@
           "Птица"
         ],
         "correct": 1,
-        "hint": "Лучший друг человека.",
-        "authohint": "It's related to something familiar."
+        "hint": "Лучший друг человека",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'בית' Какой правильный перевод этого слова?",
@@ -1314,8 +1514,8 @@
           "Магазин"
         ],
         "correct": 2,
-        "hint": "Место, где живут люди.",
-        "authohint": "Think about the context of the word."
+        "hint": "Место, где живут люди",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'מים' Какой правильный перевод этого слова?",
@@ -1326,8 +1526,8 @@
           "Земля"
         ],
         "correct": 1,
-        "hint": "Пьёшь, когда хочешь пить.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Пьёшь, когда хочешь пить",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'ספר' Какой правильный перевод этого слова?",
@@ -1338,8 +1538,8 @@
           "Окно"
         ],
         "correct": 1,
-        "hint": "Его читают, в нём страницы.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Его читают, в нём страницы",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'אוכל' Какой правильный перевод этого слова?",
@@ -1350,8 +1550,8 @@
           "Спать"
         ],
         "correct": 2,
-        "hint": "Делаешь, когда голоден.",
-        "authohint": "Focus on the key term."
+        "hint": "Делаешь, когда голоден",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'לשתות' Какой правильный перевод этого слова?",
@@ -1362,8 +1562,8 @@
           "Есть"
         ],
         "correct": 0,
-        "hint": "Делаешь с водой или соком.",
-        "authohint": "Think carefully before answering."
+        "hint": "Делаешь с водой или соком",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'חבר' Какой правильный перевод этого слова?",
@@ -1374,8 +1574,8 @@
           "Родитель"
         ],
         "correct": 2,
-        "hint": "Человек, с которым нравится проводить время.",
-        "authohint": "Focus on the key term."
+        "hint": "Человек, с которым нравится проводить время",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'שמש' Какой правильный перевод этого слова?",
@@ -1386,8 +1586,8 @@
           "Облако"
         ],
         "correct": 2,
-        "hint": "Светит днём в небе.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Светит днём в небе",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'עץ' Какой правильный перевод этого слова?",
@@ -1398,8 +1598,8 @@
           "Трава"
         ],
         "correct": 0,
-        "hint": "Высокое растение с стволом и ветвями.",
-        "authohint": "Think carefully before answering."
+        "hint": "Высокое растение с стволом и ветвями",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'מכונית' Какой правильный перевод этого слова?",
@@ -1410,8 +1610,8 @@
           "Поезд"
         ],
         "correct": 1,
-        "hint": "Ездит по дороге.",
-        "authohint": "Think about the context of the word."
+        "hint": "Ездит по дороге",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'מים קרים' Какой правильный перевод этой фразы?",
@@ -1422,8 +1622,8 @@
           "Сок"
         ],
         "correct": 1,
-        "hint": "Пьёшь в жару.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Пьёшь в жару",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'ילד' Какой правильный перевод этого слова?",
@@ -1434,8 +1634,8 @@
           "Мужчина"
         ],
         "correct": 1,
-        "hint": "Юный мальчик.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Юный мальчик",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'ילדה' Какой правильный перевод этого слова?",
@@ -1446,8 +1646,8 @@
           "Учитель"
         ],
         "correct": 2,
-        "hint": "Юная девочка.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Юная девочка",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'חלב' Какой правильный перевод этого слова?",
@@ -1458,8 +1658,8 @@
           "Сыр"
         ],
         "correct": 0,
-        "hint": "Наливают в кашу.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Наливают в кашу",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'ללכת' Какой правильный перевод этого слова?",
@@ -1470,8 +1670,8 @@
           "Оставаться"
         ],
         "correct": 2,
-        "hint": "Делаешь ногами, чтобы перемещаться.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Делаешь ногами, чтобы перемещаться",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'שמיים' Какой правильный перевод этого слова?",
@@ -1482,8 +1682,8 @@
           "Облако"
         ],
         "correct": 0,
-        "hint": "Видишь, когда смотришь вверх.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Видишь, когда смотришь вверх",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'לישון' Какой правильный перевод этого слова?",
@@ -1494,8 +1694,8 @@
           "Прыгать"
         ],
         "correct": 1,
-        "hint": "Делаешь ночью для отдыха.",
-        "authohint": "It's related to something familiar."
+        "hint": "Делаешь ночью для отдыха",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'מִישְׁמַשׁ' Как лучше перевести это слово?",
@@ -1506,8 +1706,8 @@
           "Фрукт"
         ],
         "correct": 2,
-        "hint": "Определяет спутанную смесь всего подряд.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Определяет спутанную смесь всего подряд",
+        "authohint": "Imagine a real-life example"
       }
     ],
     "medium": [
@@ -1520,8 +1720,8 @@
           "חתול (кот)"
         ],
         "correct": 2,
-        "hint": "Место проживания человека.",
-        "authohint": "Think carefully before answering."
+        "hint": "Место проживания человека",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'אני אוהב לאכול _____' Дополните предложение: (Я люблю есть _____)",
@@ -1532,8 +1732,8 @@
           "מכונית (машина)"
         ],
         "correct": 1,
-        "hint": "То, что можно съесть.",
-        "authohint": "Picture the word in your mind."
+        "hint": "То, что можно съесть",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'אני שותה _____' Дополните предложение: (Я пью _____)",
@@ -1544,8 +1744,8 @@
           "כיסא (стул)"
         ],
         "correct": 1,
-        "hint": "То, что обычно пьют.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "То, что обычно пьют",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'אני קורא _____' Дополните предложение: (Я читаю _____)",
@@ -1556,8 +1756,8 @@
           "מזלג (вилка)"
         ],
         "correct": 0,
-        "hint": "Его читают.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Его читают",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'אני הולך ל_____' Дополните предложение: (Я иду в _____)",
@@ -1568,8 +1768,8 @@
           "עץ (дерево)"
         ],
         "correct": 2,
-        "hint": "Туда ходят учиться дети.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Туда ходят учиться дети",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני רואה _____' Дополните предложение: (Я вижу _____)",
@@ -1580,8 +1780,8 @@
           "אור (свет)"
         ],
         "correct": 0,
-        "hint": "Смотришь по вечерам дома.",
-        "authohint": "It's related to something familiar."
+        "hint": "Смотришь по вечерам дома",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'אני שומע _____' Дополните предложение: (Я слышу _____)",
@@ -1592,8 +1792,8 @@
           "אבן (камень)"
         ],
         "correct": 0,
-        "hint": "Часто с музыкой.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Часто с музыкой",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני פותח את ה_____' Дополните предложение: (Я открываю _____)",
@@ -1604,8 +1804,8 @@
           "יד (рука)"
         ],
         "correct": 1,
-        "hint": "Открывают, чтобы войти.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Открывают, чтобы войти",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני לובש _____' Дополните предложение: (Я надеваю _____)",
@@ -1616,8 +1816,8 @@
           "בקבוק (бутылка)"
         ],
         "correct": 0,
-        "hint": "Носишь на верхней части тела.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Носишь на верхней части тела",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני משחק עם _____' Дополните предложение: (Я играю с _____)",
@@ -1628,8 +1828,8 @@
           "חלון (окно)"
         ],
         "correct": 0,
-        "hint": "Кто-то, с кем можно играть.",
-        "authohint": "It's related to something familiar."
+        "hint": "Кто-то, с кем можно играть",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'אני כותב עם _____' Дополните предложение: (Я пишу _____)",
@@ -1640,8 +1840,8 @@
           "כוס (кружка)"
         ],
         "correct": 1,
-        "hint": "Обычный инструмент письма.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Обычный инструмент письма",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'אני שוכב על ה_____' Дополните предложение: (Я лежу на _____)",
@@ -1652,8 +1852,8 @@
           "חלון (окно)"
         ],
         "correct": 1,
-        "hint": "Спишь здесь.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Спишь здесь",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'אני אוכל עם _____' Дополните предложение: (Я ем _____)",
@@ -1664,8 +1864,8 @@
           "דלת (дверь)"
         ],
         "correct": 0,
-        "hint": "Столовый прибор.",
-        "authohint": "Think carefully before answering."
+        "hint": "Столовый прибор",
+        "authohint": "Think carefully before answering"
       },
       {
         "question": "?'אני שם את הספר על ה_____' Дополните предложение: (Я кладу книгу на _____)",
@@ -1676,8 +1876,8 @@
           "כיסא (стул)"
         ],
         "correct": 1,
-        "hint": "Обычная мебель для вещей.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Обычная мебель для вещей",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני מדבר עם ה_____' Дополните предложение: (Я говорю с _____)",
@@ -1688,8 +1888,8 @@
           "כוס (кружка)"
         ],
         "correct": 0,
-        "hint": "Собеседник.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Собеседник",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אני שוטף את ה_____' Дополните предложение: (Я мою _____)",
@@ -1700,8 +1900,8 @@
           "עץ (дерево)"
         ],
         "correct": 0,
-        "hint": "Делаешь перед едой.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Делаешь перед едой",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אני שם מים בכ_____' Дополните предложение: (Я наливаю воду в _____)",
@@ -1712,8 +1912,8 @@
           "תמונה (картину)"
         ],
         "correct": 0,
-        "hint": "Посудина для питья.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Посудина для питья",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אני רץ ל_____' Дополните предложение: (Я бегу в _____)",
@@ -1724,8 +1924,8 @@
           "ספר (книгу)"
         ],
         "correct": 0,
-        "hint": "Дети ходят туда утром.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Дети ходят туда утром",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אני לובש _____' Дополните предложение: (Я надеваю _____)",
@@ -1736,8 +1936,8 @@
           "ספר (книга)"
         ],
         "correct": 0,
-        "hint": "Носишь на ногах.",
-        "authohint": "It's related to something familiar."
+        "hint": "Носишь на ногах",
+        "authohint": "It's related to something familiar"
       },
       {
         "question": "?'אני מחפש את ה_____' Дополните предложение: (Я ищу _____)",
@@ -1748,8 +1948,8 @@
           "קיר (стена)"
         ],
         "correct": 0,
-        "hint": "Нужен, чтобы открыть дверь.",
-        "authohint": "It's related to something familiar."
+        "hint": "Нужен, чтобы открыть дверь",
+        "authohint": "It's related to something familiar"
       }
     ],
     "hard": [
@@ -1762,8 +1962,8 @@
           "Регрессия"
         ],
         "correct": 1,
-        "hint": "Способность сдерживать себя.",
-        "authohint": "This is a commonly known concept."
+        "hint": "Способность сдерживать себя",
+        "authohint": "This is a commonly known concept"
       },
       {
         "question": "?'אֲרִיכָה'  Переведите это слово:",
@@ -1774,8 +1974,8 @@
           "Сотрудничество"
         ],
         "correct": 2,
-        "hint": "Опубликованная версия текста или фильма.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Опубликованная версия текста или фильма",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'תְּחִינָה'  Переведите это слово:",
@@ -1786,8 +1986,8 @@
           "Раскопки"
         ],
         "correct": 0,
-        "hint": "Сердечная просьба к высшей силе.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Сердечная просьба к высшей силе",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'עֵרֶךְ מוֹסָף'  Переведите термин:",
@@ -1798,8 +1998,8 @@
           "Дополнительная глава"
         ],
         "correct": 1,
-        "hint": "Экономический термин о созданной выгоде.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Экономический термин о созданной выгоде",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'מְנוּדֶה'  Переведите это слово:",
@@ -1810,8 +2010,8 @@
           "Конденсированный"
         ],
         "correct": 0,
-        "hint": "Человек, вынужденный жить вне общества.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Человек, вынужденный жить вне общества",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'הוא שבר את הקרח בשיחה'  Переведите фразу:",
@@ -1822,8 +2022,8 @@
           "Он разогрел спор"
         ],
         "correct": 1,
-        "hint": "Сделал атмосферу более расслабленной.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Сделал атмосферу более расслабленной",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'הם הגיעו מים עד נפש'  Переведите идиому:",
@@ -1834,8 +2034,8 @@
           "Они плывут спокойно"
         ],
         "correct": 0,
-        "hint": "Больше не могут терпеть.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Больше не могут терпеть",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'ככלב השב אל קיאו'  Переведите фразу:",
@@ -1846,8 +2046,8 @@
           "Как рыба, ищущая воду"
         ],
         "correct": 0,
-        "hint": "О повторении плохой ошибки.",
-        "authohint": "Think about the context of the word."
+        "hint": "О повторении плохой ошибки",
+        "authohint": "Think about the context of the word"
       },
       {
         "question": "?'סגרתי מעגל'  Переведите фразу:",
@@ -1858,8 +2058,8 @@
           "Я решил головоломку"
         ],
         "correct": 0,
-        "hint": "Окончательно завершить дело.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Окончательно завершить дело",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'אי אפשר לאחוז את החבל משני קצותיו'  Переведите пословицу:",
@@ -1870,8 +2070,8 @@
           "Кто рано встаёт, тому Бог даёт"
         ],
         "correct": 0,
-        "hint": "Нельзя получить всё сразу.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Нельзя получить всё сразу",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'חִנָּה'  Переведите это слово:",
@@ -1882,8 +2082,8 @@
           "Ревность"
         ],
         "correct": 0,
-        "hint": "Также название традиционной церемонии.",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Также название традиционной церемонии",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'תַּעֲלוּל'  Переведите это слово:",
@@ -1894,8 +2094,8 @@
           "Крах"
         ],
         "correct": 0,
-        "hint": "Озорной трюк, часто у детей.",
-        "authohint": "Focus on the key term."
+        "hint": "Озорной трюк, часто у детей",
+        "authohint": "Focus on the key term"
       },
       {
         "question": "?'הִתגַלּוּת'  Переведите это слово:",
@@ -1906,8 +2106,8 @@
           "Украшение"
         ],
         "correct": 0,
-        "hint": "Когда скрытое становится явным.",
-        "authohint": "Imagine a real-life example."
+        "hint": "Когда скрытое становится явным",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'מַסְלוּל'  Переведите это слово:",
@@ -1918,8 +2118,8 @@
           "Жест"
         ],
         "correct": 1,
-        "hint": "То, по чему идут туристы или студенты.",
-        "authohint": "Imagine a real-life example."
+        "hint": "То, по чему идут туристы или студенты",
+        "authohint": "Imagine a real-life example"
       },
       {
         "question": "?'צִפְיוֹן'  Переведите зоологическое слово:",
@@ -1930,8 +2130,8 @@
           "Песчаная гадюка"
         ],
         "correct": 2,
-        "hint": "Маленькое морское существо, похожее на коня.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Маленькое морское существо, похожее на коня",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'אל תסתכל בקנקן אלא במה שיש בו'  Переведите пословицу:",
@@ -1942,8 +2142,8 @@
           "Чья бы корова мычала"
         ],
         "correct": 0,
-        "hint": "Смотри на содержание, а не на форму.",
-        "authohint": "Picture the word in your mind."
+        "hint": "Смотри на содержание, а не на форму",
+        "authohint": "Picture the word in your mind"
       },
       {
         "question": "?'הוא ירד מהפסים'  Переведите выражение:",
@@ -1954,8 +2154,8 @@
           "Он замедлился"
         ],
         "correct": 0,
-        "hint": "Ведёт себя неадекватно.",
-        "authohint": "Use logic to eliminate wrong answers."
+        "hint": "Ведёт себя неадекватно",
+        "authohint": "Use logic to eliminate wrong answers"
       },
       {
         "question": "?'היא קפצה לביקור חטוף'  Переведите фразу:",
@@ -1966,8 +2166,8 @@
           "Она внезапно улетела за границу"
         ],
         "correct": 1,
-        "hint": "Очень короткий визит.",
-        "authohint": "You might have seen this in your daily life."
+        "hint": "Очень короткий визит",
+        "authohint": "You might have seen this in your daily life"
       },
       {
         "question": "?'נַעֲצָה'  Переведите глагол (пас.)",
@@ -1978,8 +2178,8 @@
           "Было окрашено"
         ],
         "correct": 1,
-        "hint": "Корень נ-ע-ץ, «вставлять булавку».",
-        "authohint": "Try to recall what you've learned."
+        "hint": "Корень נ-ע-ץ, «вставлять булавку»",
+        "authohint": "Try to recall what you've learned"
       },
       {
         "question": "?'הִקָּרוּת'  Переведите существительное:",
@@ -1990,8 +2190,8 @@
           "Урожай"
         ],
         "correct": 0,
-        "hint": "От корня ק-ר-ה «случаться».",
-        "authohint": "It's related to something familiar."
+        "hint": "От корня ק-ר-ה «случаться»",
+        "authohint": "It's related to something familiar"
       }
     ]
   }
