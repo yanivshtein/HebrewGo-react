@@ -1,68 +1,110 @@
-import React, { useEffect, useState } from 'react';
+// src/components/Home.jsx
+import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../logo.png';
 
 function Home() {
   const navigate = useNavigate();
   const [showToast, setShowToast] = useState(false);
-  const [gender, setGender] = useState('other');
-  const userName = localStorage.getItem('userName');
+  const timeoutRef = useRef(null);
 
-useEffect(() => {
-  if (userName) {
-    fetch(`http://localhost:5000/api/user/${userName}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.gender) setGender(data.gender);
-      });
-  }
-}, [userName]);
+  // Load username and gender from localStorage immediately
+  const [userName, setUserName] = useState(() => localStorage.getItem('userName'));
+  const [gender, setGender] = useState(() => localStorage.getItem('userGender') || null);
 
-
-
-
+  // If we have a user but no gender yet, fetch from the server
   useEffect(() => {
-    document.activeElement.blur();
+    if (userName && !gender) {
+      fetch(`http://localhost:5000/api/user/${userName}`)
+        .then((res) => res.json())
+        .then((data) => {
+          const g = data.gender || 'other';
+          setGender(g);
+          localStorage.setItem('userGender', g);
+        })
+        .catch(() => {
+          setGender('other');
+          localStorage.setItem('userGender', 'other');
+        });
+    }
+  }, [userName, gender]);
+
+  // Blur any focused element on mount to avoid mobile keyboard
+  useEffect(() => {
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
   }, []);
 
+  // Clear all user-related localStorage and reset state, then show a "logout" toast
   const handleLogout = () => {
     localStorage.removeItem('userName');
     localStorage.removeItem('userLang');
     localStorage.removeItem('userDifficulty');
+    localStorage.removeItem('userGender');
+
+    setUserName(null);
+    setGender(null);
+
     setShowToast(true);
-    setTimeout(() => {
+    navigate('/');
+
+    timeoutRef.current = setTimeout(() => {
       setShowToast(false);
-      navigate('/');
+      timeoutRef.current = null;
     }, 2500);
   };
 
+  // Cancel any pending toast timeout and navigate to login
+  const goToLogin = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    navigate('/login');
+  };
+
+  // Determine welcome message
+  const renderWelcome = () => {
+    if (!userName) {
+      // Not logged in yet
+      return (
+        <>
+          {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'} ל־
+          <span className="text-blue-700">Hebrew Go 🎓</span>
+        </>
+      );
+    }
+    // Logged in user
+    return (
+      <>
+        {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'}{' '}
+        <span className="text-blue-700">{userName} 🎓</span>
+      </>
+    );
+  };
+
   return (
-    <div className="min-h-screen w-full bg-blue-100 dark:bg-gray-900 text-black dark:text-white transition-colors duration-300 flex items-center justify-center">
+    <div className="min-h-screen w-full bg-blue-100 flex items-center justify-center p-6">
       <div
         dir="rtl"
         className="w-full max-w-4xl px-6 py-6 flex flex-col items-center text-center space-y-6"
       >
-        {/* לוגו מוקטן מעט */}
+        {/* Logo */}
         <img
           src={logo}
           alt="Hebrew Go Logo"
           className="h-60 sm:h-64 md:h-72 bg-white p-4 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105"
-/>
-    <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
-      {userName ? (
-    <>
-      {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'} <span className="dark:text-blue-400">{userName} 🎓</span>
-    </>
-  ) : (
-    <>
-      {gender === 'female' ? 'ברוכה הבאה' : 'ברוך הבא'} ל־<span className="text-blue-700 dark:text-blue-400">Hebrew Go 🎓</span>
-    </>
-  )}
-</p>
+        />
 
-        {/* כפתורים */}
+        {/* Welcome message */}
+        <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+          {renderWelcome()}
+        </p>
+
+        {/* Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-          {localStorage.getItem('userName') ? (
+          {userName ? (
             <>
               <button
                 onClick={() => navigate('/progress')}
@@ -91,8 +133,8 @@ useEffect(() => {
             </>
           ) : (
             <button
-              onClick={() => navigate('/login')}
-              className="w-full h-16 bg-purple-500 hover:bg-purple-600 text-white text-lg font-semibold rounded-xl shadow-md transition-all col-span-1 sm:col-span-2"
+              onClick={goToLogin}
+              className="w-full py-4 px-6 bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white text-xl font-bold rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 col-span-1 sm:col-span-2"
             >
               🔑 התחברות
             </button>
@@ -100,7 +142,7 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* טוסט הודעה */}
+      {/* Logout toast */}
       {showToast && (
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-full shadow-lg text-lg z-50">
           ✅ התנתקת בהצלחה!

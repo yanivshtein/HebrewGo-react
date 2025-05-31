@@ -1,6 +1,6 @@
-// src/components/Register.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaUserAlt, FaLock, FaVenusMars, FaLanguage } from 'react-icons/fa';
 
 function Register() {
   const [userName, setUserName] = useState('');
@@ -41,7 +41,7 @@ function Register() {
         alert('✅ נרשמת בהצלחה!');
         localStorage.setItem('userName', userName);
         localStorage.setItem('userLang', lang);
-        localStorage.setItem('userDifficulty', 'easy'); // ברירת מחדל
+        localStorage.setItem('userDifficulty', 'easy');
         navigate('/placement');
       }
     } catch (err) {
@@ -51,62 +51,77 @@ function Register() {
   };
 
   return (
-    <div dir="rtl" className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
-      <div className="w-full max-w-lg bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md transition-colors duration-300">
-        <h1 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">
-          הרשמה
-        </h1>
+    <div dir="rtl" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-100 via-blue-100 to-blue-200 p-6">
+      <div className="w-full max-w-md bg-white/60 backdrop-blur-xl border border-blue-200 rounded-3xl shadow-2xl p-10 space-y-8 transition-all duration-300">
+        <h1 className="text-4xl font-bold text-center text-blue-700">הרשמה</h1>
 
         <div className="space-y-5">
 
           <div>
-            <label className="block mb-1">שם משתמש</label>
-            <input
-              type="text"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700 dark:text-white"
-            />
+            <label className="block text-sm font-medium text-gray-700 mb-1">שם משתמש</label>
+            <div className="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-blue-400 transition">
+              <FaUserAlt className="text-gray-400 me-3" />
+              <input
+                type="text"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                className="flex-1 bg-transparent focus:outline-none text-gray-800"
+                placeholder="הקלד שם משתמש"
+                required
+              />
+            </div>
           </div>
 
           <div>
-            <label className="block mb-1">סיסמה</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700 dark:text-white"
-            />
+            <label className="block text-sm font-medium text-gray-700 mb-1">סיסמה</label>
+            <div className="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-blue-400 transition">
+              <FaLock className="text-gray-400 me-3" />
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="flex-1 bg-transparent focus:outline-none text-gray-800"
+                placeholder="••••••••"
+                required
+              />
+            </div>
           </div>
 
           <div>
-            <label className="block mb-1">מין</label>
-            <select
-              value={gender}
-              onChange={(e) => setGender(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700 dark:text-white"
-            >
-              <option value="male">זכר</option>
-              <option value="female">נקבה</option>
-            </select>
+            <label className="block text-sm font-medium text-gray-700 mb-1">מין</label>
+            <div className="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3">
+              <FaVenusMars className="text-gray-400 me-3" />
+              <select
+                value={gender}
+                onChange={(e) => setGender(e.target.value)}
+                className="flex-1 bg-transparent focus:outline-none text-gray-800"
+              >
+                <option value="male">זכר</option>
+                <option value="female">נקבה</option>
+                <option value="other">אחר</option>
+              </select>
+            </div>
           </div>
 
           <div>
-            <label className="block mb-1">שפה מועדפת</label>
-            <select
-              value={lang}
-              onChange={(e) => setLang(e.target.value)}
-              className="w-full p-2 border rounded bg-white dark:bg-gray-700 dark:text-white"
-            >
-              <option value="us">English</option>
-              <option value="es">Español</option>
-              <option value="ru">Русский</option>
-            </select>
+            <label className="block text-sm font-medium text-gray-700 mb-1">שפה מועדפת</label>
+            <div className="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3">
+              <FaLanguage className="text-gray-400 me-3" />
+              <select
+                value={lang}
+                onChange={(e) => setLang(e.target.value)}
+                className="flex-1 bg-transparent focus:outline-none text-gray-800"
+              >
+                <option value="us">English</option>
+                <option value="es">Español</option>
+                <option value="ru">Русский</option>
+              </select>
+            </div>
           </div>
 
           <button
             onClick={handleRegister}
-            className="w-full py-3 bg-green-500 text-white rounded hover:bg-green-600 transition"
+            className="w-full py-3 bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-semibold rounded-xl shadow-md transition-all duration-300"
           >
             הירשם
           </button>
